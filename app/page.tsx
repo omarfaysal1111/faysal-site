@@ -13,7 +13,7 @@ export default function Home() {
             <span className="viper-wrap">
               <Image src="/viper-icon.png" alt="" width={42} height={42} priority />
             </span>
-            <span>FAYSAL</span>
+           
           </a>
           <div className="nav-links">
             <a href="#home">Home</a>
@@ -28,7 +28,7 @@ export default function Home() {
             <p className="eyebrow"><span /> Commerce &amp; Digital Product Studio</p>
             <h1>Digital commerce,<br /><em>thoughtfully</em> engineered.</h1>
             <p className="hero-intro">
-              We uncover the friction costing ambitious brands customers, time and growth—then design and build the experience forward.
+              We uncover the friction costing ambitious brands customers, time and growth then design and build the experience forward.
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#contact">Request a Commerce Review <span>↗</span></a>
@@ -49,13 +49,13 @@ export default function Home() {
               />
               <span className="logo-caption">Independent digital studio · GCC</span>
             </div>
-            <div className="floating-note note-top"><span>01</span> Brand expression</div>
-            <div className="floating-note note-bottom"><span>02</span> Buying experience</div>
+            {/* <div className="floating-note note-top"><span>01</span> Brand expression</div>
+            <div className="floating-note note-bottom"><span>02</span> Buying experience</div> */}
           </div>
         </div>
 
         <div className="hero-foot shell">
-          <p>Strategy · Experience · Engineering</p>
+          <p></p>
           <a href="#services">Explore the studio <span>↓</span></a>
         </div>
       </section>
