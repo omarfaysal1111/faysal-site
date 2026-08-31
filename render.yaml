@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: faysal-site
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    repo: https://github.com/omarfaysal1111/faysal-site
+    branch: main
+    region: frankfurt
+    plan: starter
+    healthCheckPath: /
+    autoDeploy: true

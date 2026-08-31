@@ -1,0 +1,14 @@
+.git
+.gitignore
+node_modules
+dist
+.next
+.vinext
+.wrangler
+.vscode
+.env
+.env.*
+Dockerfile
+.dockerignore
+fly.toml
+npm-debug.log*

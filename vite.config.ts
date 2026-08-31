@@ -34,7 +34,18 @@ const localBindingConfig = {
     : [],
 };
 
+// The Fly.io image builds a plain Node server, so the Cloudflare Workers and
+// OpenAI-hosting plugins are skipped for that target.
+const isNodeTarget = process.env.DEPLOY_TARGET === 'node';
+
 export default defineConfig(async () => {
+  if (isNodeTarget) {
+    return {
+      css: { postcss: { plugins: [tailwindcss()] } },
+      plugins: [vinext()],
+    };
+  }
+
   // Keep Wrangler and Miniflare state project-local. These are non-secret tool
   // settings; application environment belongs in ignored `.env*` files.
   process.env.WRANGLER_WRITE_LOGS ??= 'false';
