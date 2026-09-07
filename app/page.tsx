@@ -1,5 +1,7 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import ContactForm from './contact-form';
+import { featuredCaseStudy as caseStudy } from './case-studies/data';
 
 export default function Home() {
   return (
@@ -16,7 +18,7 @@ export default function Home() {
            
           </a>
           <div className="nav-links">
-            <a href="#home">Home</a>
+            <a href="#case-studies">Case studies</a>
             <a href="#services">Services</a>
             <a href="#approach">Approach</a>
           </div>
@@ -133,6 +135,44 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="case-studies-section" id="case-studies">
+        <div className="shell">
+          <div className="case-section-heading">
+            <div>
+              <p className="section-kicker">Case study</p>
+              <h2>Proof, not promises.</h2>
+            </div>
+            <div>
+              <p>A closer look at the commerce problems we&apos;ve shaped, the decisions behind the work and what changed after launch.</p>
+              <Link className="button case-more-button" href="/case-studies">Show more <span className="text-arrow" aria-hidden="true">↗︎</span></Link>
+            </div>
+          </div>
+
+          <Link className="featured-case-study" href={`/case-studies/${caseStudy.slug}`} aria-label={`Read case study: ${caseStudy.title}`}>
+            <article>
+              <div className="featured-case-copy">
+                <div className="case-card-topline">
+                  <span>{caseStudy.number}</span>
+                  <p>{caseStudy.client} · {caseStudy.location}</p>
+                </div>
+                <h3>{caseStudy.title}</h3>
+                <p>{caseStudy.summary}</p>
+                <div className="case-tags" aria-label="Disciplines">
+                  {caseStudy.disciplines.map((discipline) => <span key={discipline}>{discipline}</span>)}
+                </div>
+              </div>
+              <div className="featured-case-result">
+                <div className="case-orbit" aria-hidden="true"><i /><i /><i /></div>
+                <p>Commercial outcome</p>
+                <strong>{caseStudy.result}</strong>
+                <span>{caseStudy.resultLabel}</span>
+                <b>Read the case study <span className="text-arrow" aria-hidden="true">↗︎</span></b>
+              </div>
+            </article>
+          </Link>
+        </div>
+      </section>
+
       <section className="services-section">
         <div className="shell">
           <div className="section-heading compact-heading">
@@ -182,7 +222,7 @@ export default function Home() {
         <div className="shell footer-grid">
           <div className="footer-brand">
             <div className="footer-viper"><Image src="/viper-icon.png" alt="" width={48} height={48} /></div>
-            <div><strong>FAYSAL</strong> <span><a href="mailto:info@faysalstuido.com">info@faysalstuido.com</a></span><span>Commerce &amp; Digital Product Studio</span></div>
+            <div><strong>FAYSAL</strong> <span><a href="mailto:info@faysalstudio.com">info@faysalstudio.com</a></span><span>Commerce &amp; Digital Product Studio</span></div>
           </div>
           <p>Storefronts that sell, and hold up.</p>
           <a href="#home">Back to top <span className="text-arrow" aria-hidden="true">↑︎</span></a>
