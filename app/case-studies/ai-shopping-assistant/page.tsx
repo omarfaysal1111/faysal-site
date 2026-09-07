@@ -6,6 +6,17 @@ import { featuredCaseStudy as study } from '../data';
 export const metadata: Metadata = {
   title: 'AI Shopping Assistant — FAYSAL Case Study',
   description: 'How a conversational shopping assistant turned previously invisible inventory into more than 150 orders in one month.',
+  openGraph: {
+    title: 'AI Shopping Assistant — FAYSAL Case Study',
+    description: 'How a conversational shopping assistant turned previously invisible inventory into more than 150 orders in one month.',
+    images: [],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'AI Shopping Assistant — FAYSAL Case Study',
+    description: 'How a conversational shopping assistant turned previously invisible inventory into more than 150 orders in one month.',
+    images: [],
+  },
 };
 
 export default function AiShoppingAssistantCaseStudy() {

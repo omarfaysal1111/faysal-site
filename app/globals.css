@@ -278,6 +278,7 @@ h1 em { color:#d89ba2; font-family:Georgia, 'Times New Roman', serif; font-weigh
 .summary-result > span { display:block; font-size:8px; letter-spacing:.12em; text-transform:uppercase; opacity:.65; }
 .summary-result strong { display:block; margin:21px 0 12px; font-size:72px; line-height:.75; letter-spacing:-.08em; }
 .summary-result p { margin:0; color:rgba(255,255,255,.65); font-size:11px; line-height:1.5; }
+.summary-result-text strong { max-width:190px; font-size:38px; line-height:.92; letter-spacing:-.055em; }
 .case-report-body > section { padding-bottom:72px; margin-bottom:72px; border-bottom:1px solid rgba(18,17,16,.16); }
 .case-report-body h2 { max-width:700px; margin:0 0 27px; font-size:clamp(30px,3.2vw,46px); line-height:1.08; letter-spacing:-.04em; font-weight:620; }
 .case-report-body section > p:not(.report-label) { margin:0; max-width:700px; color:#615955; font-size:16px; line-height:1.75; }
