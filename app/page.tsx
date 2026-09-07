@@ -164,9 +164,16 @@ export default function Home() {
               </div>
               <div className="featured-case-result">
                 <div className="case-orbit" aria-hidden="true"><i /><i /><i /></div>
-                <p>Commercial outcome</p>
-                <strong>{caseStudy.result}</strong>
-                <span>{caseStudy.resultLabel}</span>
+                <p className="case-outcome-label">Measured outcome</p>
+                <div className="case-outcome-value">
+                  <strong>{caseStudy.result}</strong>
+                  <span>{caseStudy.resultUnit}</span>
+                </div>
+                <p className="case-outcome-period">{caseStudy.resultPeriod}</p>
+                <div className="case-outcome-baseline">
+                  <span>Previous baseline</span>
+                  <p>{caseStudy.resultBaseline}</p>
+                </div>
                 <b>Read the case study <span className="text-arrow" aria-hidden="true">↗︎</span></b>
               </div>
             </article>

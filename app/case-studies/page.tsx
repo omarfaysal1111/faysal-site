@@ -58,8 +58,13 @@ export default function CaseStudiesPage() {
                     <span className="case-list-arrow text-arrow" aria-hidden="true">↗︎</span>
                   </div>
                   <div className="case-list-result">
-                    <strong>{study.result}</strong>
-                    <p>{study.resultLabel}</p>
+                    <span>Measured outcome</span>
+                    <div>
+                      <strong>{study.result}</strong>
+                      <b>{study.resultUnit}</b>
+                    </div>
+                    <p>{study.resultPeriod}</p>
+                    <small>{study.resultBaseline}</small>
                   </div>
                   <div className="case-tags" aria-label="Disciplines">
                     {study.disciplines.map((discipline) => <span key={discipline}>{discipline}</span>)}

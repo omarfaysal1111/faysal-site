@@ -9,7 +9,9 @@ export const caseStudies = [
     summary:
       'Conversational product discovery connected to ERP data across the retailer’s website and mobile app.',
     result: '150+',
-    resultLabel: 'orders in one month from three previously unsold products',
+    resultUnit: 'orders',
+    resultPeriod: 'in one month',
+    resultBaseline: '3 products · 0 sales in the previous 6 months',
   },
 ] as const;
 
