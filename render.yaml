@@ -9,3 +9,10 @@ services:
     plan: starter
     healthCheckPath: /
     autoDeploy: true
+    envVars:
+      - key: RESEND_API_KEY
+        sync: false
+      - key: CONTACT_TO_EMAIL
+        value: info@faysalstudio.com
+      - key: CONTACT_FROM_EMAIL
+        value: FAYSAL Studio <info@faysalstudio.com>
