@@ -1,4 +1,3 @@
-const CONTACT_TO_EMAIL = 'info@faysalstudio.com';
 const MAX_FIELD_LENGTH = 2_000;
 
 type ContactRequest = {
@@ -57,6 +56,7 @@ export async function POST(request: Request) {
 
   const apiKey = process.env.RESEND_API_KEY;
   const fromEmail = process.env.CONTACT_FROM_EMAIL;
+  const toEmail = process.env.CONTACT_TO_EMAIL || 'info@faysalstudio.com';
 
   if (!apiKey || !fromEmail) {
     console.error('Contact email configuration is missing.');
@@ -69,10 +69,11 @@ export async function POST(request: Request) {
     headers: {
       Authorization: `Bearer ${apiKey}`,
       'Content-Type': 'application/json',
+      'User-Agent': 'faysal-site/1.0',
     },
     body: JSON.stringify({
       from: fromEmail,
-      to: [CONTACT_TO_EMAIL],
+      to: [toEmail],
       reply_to: email,
       subject: `Commerce Review Request — ${subjectCompany}`,
       text: [
@@ -90,7 +91,8 @@ export async function POST(request: Request) {
   });
 
   if (!emailResponse.ok) {
-    console.error(`Email provider returned status ${emailResponse.status}.`);
+    const providerError = await emailResponse.text();
+    console.error(`Email provider returned status ${emailResponse.status}: ${providerError.slice(0, 500)}`);
     return Response.json({ error: 'Unable to deliver email.' }, { status: 502 });
   }
 
