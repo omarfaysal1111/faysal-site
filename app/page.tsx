@@ -21,7 +21,7 @@ export default function Home() {
           </a>
           <div className="nav-links">
             <a href="#home" aria-current="page">Home</a>
-            <a href="#case-studies">Case Studies &amp; Portfolio</a>
+            <a href="/case-studies">Case Studies &amp; Portfolio</a>
             <a href="#services">Services</a>
             <a href="#approach">Approach</a>
           </div>
