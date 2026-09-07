@@ -35,23 +35,6 @@ export default function Home() {
               <a className="button button-quiet" href="#work">See how we think <span>↓</span></a>
             </div>
           </div>
-
-          <div className="hero-art" aria-label="Faysal Studio identity">
-            <div className="orbit orbit-one" />
-            <div className="orbit orbit-two" />
-            <div className="logo-glass">
-              <Image
-                src="/faysal-stacked.png"
-                alt="Faysal"
-                width={1080}
-                height={1080}
-                priority
-              />
-              <span className="logo-caption">Independent digital studio · GCC</span>
-            </div>
-            {/* <div className="floating-note note-top"><span>01</span> Brand expression</div>
-            <div className="floating-note note-bottom"><span>02</span> Buying experience</div> */}
-          </div>
         </div>
 
         <div className="hero-foot shell">
@@ -82,32 +65,32 @@ export default function Home() {
             <article className="glass-card pressure-card featured-card">
               <span className="card-number">01</span>
               <div>
-                <h3>Buying friction</h3>
-                <p>Product discovery, decision-making, cart and checkout obstacles that make customers hesitate.</p>
+                <h3>The buying journey</h3>
+                <p>Someone already wants your product and the site makes them work for it. Filters that don&apos;t match how people actually shop. A product page that leaves the one deciding question unanswered. A checkout that asks for the same address twice.</p>
               </div>
               <span className="card-arrow">↗</span>
             </article>
             <article className="glass-card pressure-card">
               <span className="card-number">02</span>
               <div>
-                <h3>Weak brand expression</h3>
-                <p>A generic digital experience that fails to carry the quality and character of the brand.</p>
+                <h3>How the brand comes across</h3>
+                <p>The photography, the packaging and the shop floor all say one thing. The website says &quot;template.&quot; Customers register the difference even when they can&apos;t name it, and it costs you the premium you&apos;ve earned everywhere else.</p>
               </div>
               <span className="card-arrow">↗</span>
             </article>
             <article className="glass-card pressure-card">
               <span className="card-number">03</span>
               <div>
-                <h3>Operational drag</h3>
-                <p>Broken data, repetitive work and disconnected tools that absorb time behind every order.</p>
+                <h3>What happens after the order</h3>
+                <p>Orders retyped from one system into another. Stock that&apos;s correct in one place and wrong in the other. Someone on your team spending two hours a day being the integration between two tools that don&apos;t talk.</p>
               </div>
               <span className="card-arrow">↗</span>
             </article>
             <article className="glass-card pressure-card">
               <span className="card-number">04</span>
               <div>
-                <h3>Technical risk</h3>
-                <p>Performance gaps, bugs and edge cases that erode confidence when the experience is under pressure.</p>
+                <h3>What breaks under load</h3>
+                <p>The slow page on the day of the sale. The payment method that fails for one bank. The edge case nobody tested. These surface exactly when the traffic is worth the most.</p>
               </div>
               <span className="card-arrow">↗</span>
             </article>
@@ -118,9 +101,12 @@ export default function Home() {
       <section className="review-section" id="work">
         <div className="shell review-grid">
           <div className="review-copy">
-            <p className="section-kicker dark-kicker">The entry point</p>
-            <h2>A clear diagnosis before a costly redesign.</h2>
-            <p>Our Commerce Review turns a complex digital storefront into a focused, decision-ready plan. No theatre. No hundred-slide deck. Just evidence, priorities and the clearest route forward.</p>
+            <p className="section-kicker dark-kicker">Where most clients start</p>
+            <h2>Before you pay for a rebuild, find out what actually needs rebuilding.</h2>
+            <div className="review-body">
+              <p>We spend two weeks going through your storefront twice: once the way a customer does, once the way your operations team does. Then you get one document what we found, what each thing is costing you, and what to do about it in what order. Usually 10 to 14 pages. Fixed fee, and a call to walk you through it.</p>
+              <p>If we go looking and there&apos;s nothing worth acting on, we&apos;ll tell you that instead of inventing a project.</p>
+            </div>
             <a className="text-link" href="#contact">Request your review <span>↗</span></a>
           </div>
 
@@ -130,18 +116,18 @@ export default function Home() {
               <span>FAYSAL / 001</span>
             </div>
             <div className="report-title">
-              <span>Independent review</span>
-              <h3>From storefront<br />to operating reality.</h3>
+              <span>Prepared for [Client]</span>
+              <h3>What needs fixing,<br />and in what order.</h3>
             </div>
             <div className="report-list">
-              <div><span>01</span><p>Buying journey</p><b>Friction &amp; clarity</b></div>
-              <div><span>02</span><p>Brand expression</p><b>Character &amp; trust</b></div>
-              <div><span>03</span><p>Post-order flow</p><b>Data &amp; operations</b></div>
-              <div><span>04</span><p>Product quality</p><b>Performance &amp; risk</b></div>
+              <div><span>01</span><p>Buying journey</p><b>Where customers hesitate</b></div>
+              <div><span>02</span><p>Brand expression</p><b>What the experience says about you</b></div>
+              <div><span>03</span><p>After the order</p><b>Data, systems &amp; manual work</b></div>
+              <div><span>04</span><p>Performance &amp; reliability</p><b>What breaks and when</b></div>
             </div>
             <div className="report-footer">
               <p>Output</p>
-              <span>Prioritised action plan</span>
+              <span>A ranked list of fixes, each with effort and expected impact</span>
             </div>
           </div>
         </div>
@@ -150,14 +136,14 @@ export default function Home() {
       <section className="services-section">
         <div className="shell">
           <div className="section-heading compact-heading">
-            <p className="section-kicker">What we build</p>
-            <h2>One studio, from clarity<br />to execution.</h2>
+            <p className="section-kicker">What we do</p>
+            <h2>Four things.</h2>
           </div>
           <div className="service-list">
-            <article><span>01</span><h3>Commerce reviews</h3><p>Evidence-led audits and prioritised action plans.</p><b>Diagnose</b></article>
-            <article><span>02</span><h3>E-commerce experiences</h3><p>Strategy, UX, design, development and optimisation.</p><b>Convert</b></article>
-            <article><span>03</span><h3>Digital products</h3><p>Mobile apps and complex platforms built around real workflows.</p><b>Scale</b></article>
-            <article><span>04</span><h3>Brand &amp; growth systems</h3><p>Identity and marketing support that strengthens the core experience.</p><b>Express</b></article>
+            <article><span>01</span><h3>Commerce reviews</h3><p>Two weeks, one document, a ranked list of what to fix. Most people start here, and plenty stop here.</p><b>Review</b></article>
+            <article><span>02</span><h3>E-commerce builds</h3><p>Strategy through to launch UX, design, front-end, integrations plus the optimisation work in the months after go-live, which is where most of the gains actually come from.</p><b>Build</b></article>
+            <article><span>03</span><h3>Digital products</h3><p>Mobile apps and internal platforms for the workflows a storefront can&apos;t hold: ordering, service, inventory, delivery, field teams.</p><b>Product</b></article>
+            <article><span>04</span><h3>Brand and growth</h3><p>Identity, content and campaign work for when the experience is right and not enough people are arriving.</p><b>Grow</b></article>
           </div>
         </div>
       </section>
@@ -166,16 +152,16 @@ export default function Home() {
         <div className="shell">
           <div className="approach-intro">
             <div>
-              <p className="section-kicker">Our approach</p>
-              <h2>Senior thinking.<br />Less ceremony.</h2>
+              <p className="section-kicker">How we work</p>
+              <h2>You&apos;ll be talking to the people doing the work.</h2>
             </div>
-            <p>Small by design and direct by default. You work with the people thinking through the problem—not layers of account management.</p>
+            {/* <p>We&apos;re small on purpose. There&apos;s no account manager between you and whoever is drawing the screens or writing the code. That means faster answers, fewer meetings, and a hard limit on how many projects we take at once. If we&apos;re full, we&apos;ll say so.</p> */}
           </div>
           <div className="process-line">
-            <article><span>01</span><h3>Diagnose</h3><p>Find what matters through the customer journey, data and operating context.</p></article>
-            <article><span>02</span><h3>Prioritise</h3><p>Separate urgent revenue and experience issues from expensive distractions.</p></article>
-            <article><span>03</span><h3>Build</h3><p>Design and engineer the strongest intervention with a focused team.</p></article>
-            <article><span>04</span><h3>Improve</h3><p>Measure, learn and refine after the work meets real customers.</p></article>
+            <article><span>01</span><h3>Two weeks looking</h3><p>Your customer journey, your analytics, and a real conversation with whoever handles orders after they land. The operations side is where the surprises usually are.</p></article>
+            <article><span>02</span><h3>A ranked list</h3><p>Not everything is worth fixing. We separate what&apos;s costing you money now from what&apos;s merely annoying, and we&apos;re specific about which is which.</p></article>
+            <article><span>03</span><h3>A small team building</h3><p>Usually two or three people, working in short cycles you can watch rather than a black box with a launch date at the end.</p></article>
+            <article><span>04</span><h3>Six weeks after launch</h3><p>We stay on long enough to see what real customers do with it and correct what we got wrong. Nobody gets it entirely right the first time.</p></article>
           </div>
         </div>
       </section>
@@ -184,10 +170,9 @@ export default function Home() {
         <div className="contact-orb" />
         <div className="shell contact-grid">
           <div className="contact-copy">
-            <p className="section-kicker">Start with clarity</p>
-            <h2>What is your digital experience quietly costing you?</h2>
-            <p>Share the storefront, app or workflow you want us to examine. We will turn the request into a concise brief you can send directly.</p>
-            <div className="availability"><span /> Select review engagements available</div>
+            <p className="section-kicker">Tell us what&apos;s not working</p>
+            <h2>What&apos;s your storefront costing you right now?</h2>
+            <p>Send us the site, app or workflow you want looked at, and tell us what&apos;s bothering you even if you can&apos;t put your finger on it precisely. We&apos;ll come back with what we&apos;d examine first and an honest read on whether we&apos;re the right people for it.</p>
           </div>
           <ContactForm />
         </div>
@@ -197,9 +182,9 @@ export default function Home() {
         <div className="shell footer-grid">
           <div className="footer-brand">
             <div className="footer-viper"><Image src="/viper-icon.png" alt="" width={48} height={48} /></div>
-            <div><strong>FAYSAL</strong><span>Commerce &amp; Digital Product Studio</span></div>
+            <div><strong>FAYSAL</strong> <span><a href="mailto:info@faysalstuido.com">info@faysalstuido.com</a></span><span>Commerce &amp; Digital Product Studio</span></div>
           </div>
-          <p>Digital commerce, thoughtfully engineered.</p>
+          <p>Storefronts that sell, and hold up.</p>
           <a href="#home">Back to top ↑</a>
         </div>
       </footer>

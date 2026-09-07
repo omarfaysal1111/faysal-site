@@ -14,16 +14,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'FAYSAL — Commerce & Digital Product Studio',
-  description: 'Digital commerce, thoughtfully engineered for ambitious brands.',
+  description: 'We find where retail and consumer storefronts lose customers, tell you what is worth fixing, and build the fix.',
   openGraph: {
     title: 'FAYSAL — Commerce & Digital Product Studio',
-    description: 'Digital commerce, thoughtfully engineered for ambitious brands.',
+    description: 'We find where retail and consumer storefronts lose customers, tell you what is worth fixing, and build the fix.',
     images: ['/og.png'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'FAYSAL — Commerce & Digital Product Studio',
-    description: 'Digital commerce, thoughtfully engineered for ambitious brands.',
+    description: 'We find where retail and consumer storefronts lose customers, tell you what is worth fixing, and build the fix.',
     images: ['/og.png'],
   },
 };

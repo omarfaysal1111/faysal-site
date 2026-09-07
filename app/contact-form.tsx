@@ -13,21 +13,21 @@ export default function ContactForm() {
       `Name: ${form.get('name')}`,
       `Company: ${form.get('company')}`,
       `Work email: ${form.get('email')}`,
-      `Website or app: ${form.get('website')}`,
-      `Current challenge: ${form.get('challenge')}`,
+      `Link to your site or app: ${form.get('website')}`,
+      `What's bothering you most: ${form.get('challenge')}`,
     ].join('\n');
 
     try {
       if (navigator.share) {
         await navigator.share({ title: 'Commerce Review Request', text: brief });
-        setStatus('Your review request is ready to send.');
+        setStatus('Ready. Your request has been opened in the share menu.');
       } else {
         await navigator.clipboard.writeText(brief);
-        setStatus('Request copied—send it to FAYSAL through the channel where you found us.');
+        setStatus('Copied. Send it to FAYSAL and we’ll reply within two working days.');
       }
     } catch (error) {
       if ((error as DOMException).name !== 'AbortError') {
-        setStatus('Copy the details and send them to FAYSAL through your preferred channel.');
+        setStatus('Your request is ready. Copy the details and send them to FAYSAL.');
       }
     }
   }
@@ -50,17 +50,17 @@ export default function ContactForm() {
           <input name="email" type="email" autoComplete="email" placeholder="you@company.com" required />
         </label>
         <label>
-          <span>Website or app</span>
+          <span>Link to your site or app</span>
           <input name="website" type="url" inputMode="url" placeholder="https://" required />
         </label>
       </div>
       <label>
-        <span>What feels most urgent?</span>
-        <textarea name="challenge" rows={4} placeholder="Conversion, customer experience, operations, performance…" required />
+        <span>What&apos;s bothering you most?</span>
+        <textarea name="challenge" rows={4} placeholder="Sales dropped after the redesign. Checkout abandonment. Orders taking too long to process. Anything." required />
       </label>
       <div className="form-submit">
-        <p>Your details stay on your device. We prepare a brief you can share directly.</p>
-        <button type="submit">Prepare my request <span>↗</span></button>
+        <p>This form doesn&apos;t send anything anywhere—there&apos;s no server behind it. It just formats what you&apos;ve written so you can copy it and email it to us yourself.</p>
+        <button type="submit">Write my request <span>↗</span></button>
       </div>
       <p className="form-status" role="status" aria-live="polite">{status}</p>
     </form>
