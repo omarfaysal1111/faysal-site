@@ -31,7 +31,7 @@ export default function AiShoppingAssistantCaseStudy() {
           <Link className="back-link" href="/case-studies"><span aria-hidden="true">←</span> All case studies</Link>
           <p className="section-kicker">Case study / {study.number}</p>
           <h1>{study.title}</h1>
-          <p className="case-detail-lede">A product-discovery experience built around customer questions, connected product data and a clearer path from uncertainty to purchase.</p>
+          <p className="case-detail-lede">Conversational product discovery connected to ERP product data across the retailer&apos;s website and mobile app.</p>
 
           <div className="case-detail-meta">
             <div><span>Client</span><p>A multi-branch luxury home-appliance retailer in Saudi Arabia</p></div>
@@ -41,105 +41,75 @@ export default function AiShoppingAssistantCaseStudy() {
         </div>
       </header>
 
-      <section className="case-result-hero" aria-label="Headline result">
-        <div className="shell case-result-grid">
-          <p>The commercial signal</p>
-          <strong>150<span>+</span></strong>
-          <h2>orders in one month from three products that had recorded no sales for six consecutive months.</h2>
-        </div>
-      </section>
-
-      <article className="case-article">
-        <div className="shell case-article-grid">
-          <aside className="case-rail">
-            <p>In this case study</p>
-            <a href="#problem">The business problem</a>
-            <a href="#role">My role</a>
-            <a href="#delivery">What we delivered</a>
-            <a href="#adoption">Designing for adoption</a>
-            <a href="#constraint">The technical constraint</a>
-            <a href="#outcome">The outcome</a>
-            <a href="#why">Why this matters</a>
+      <article className="case-report">
+        <div className="shell case-report-grid">
+          <aside className="study-summary" aria-label="Study summary">
+            <p className="report-label">Study summary</p>
+            <dl>
+              <div><dt>Context</dt><dd>Multi-branch luxury appliance retail</dd></div>
+              <div><dt>Market</dt><dd>Saudi Arabia</dd></div>
+              <div><dt>Baseline</dt><dd>Three products with zero sales for six months</dd></div>
+              <div><dt>Intervention</dt><dd>ERP-connected conversational shopping assistant</dd></div>
+              <div><dt>Evidence</dt><dd>Conversation, query and order records</dd></div>
+            </dl>
+            <div className="summary-result">
+              <span>Observed result</span>
+              <strong>150+</strong>
+              <p>orders in one month across the three products</p>
+            </div>
           </aside>
 
-          <div className="case-story">
-            <section id="problem">
-              <p className="case-section-number">01 / The business problem</p>
-              <h2>The catalogue was large. Discoverability was not.</h2>
-              <p>The retailer carried a large catalogue of appliances and specialist devices, but customers could not easily discover everything available.</p>
-              <p>Some products remained in stock with no sales—not necessarily because customers did not want them, but because many did not know the retailer carried them.</p>
-              <p>Another problem appeared closer to purchase. Customers would find a suitable appliance, then hesitate because they could not confidently determine whether its dimensions would fit their home. To get an answer, they had to call customer service, creating delays for the customer and avoidable pressure on the support team.</p>
-              <blockquote>The opportunity was not simply to show customers more information. It was to let them ask for exactly what they needed.</blockquote>
+          <div className="case-report-body">
+            <section>
+              <p className="report-label">Research question</p>
+              <h2>Can conversational discovery improve product visibility and purchase confidence?</h2>
+              <p>The retailer carried a large catalogue of appliances and specialist devices. Customers could not easily discover the full range, and some products remained in stock without sales.</p>
+              <p>Customers also lacked confidence when checking dimensions and specifications. Resolving these questions required a customer-service call, adding delay and support workload.</p>
+              <p className="report-hypothesis"><strong>Working hypothesis:</strong> allowing customers to describe their needs and ask product-specific questions would improve discovery and reduce uncertainty before purchase.</p>
             </section>
 
-            <section id="role">
-              <p className="case-section-number">02 / My role</p>
-              <h2>Reframing discovery around customer intent.</h2>
-              <p>As the digital commerce expert and software architect, I reframed the experience around customer intent.</p>
-              <p>Instead of waiting for the retailer to anticipate every question, customers should be able to describe what they need, ask about dimensions and specifications, and discover relevant products through a conversation.</p>
-              <p>I defined the product concept and software architecture, working with the company&apos;s internal AI engineer to develop the solution.</p>
+            <section>
+              <p className="report-label">Intervention</p>
+              <h2>ERP-connected conversational shopping assistant</h2>
+              <p>I defined the commerce concept and software architecture with the company&apos;s internal AI engineer. The assistant used the retailer&apos;s ERP product data to answer natural-language questions and recommend relevant products.</p>
+              <ol className="method-list">
+                <li><span>01</span><div><strong>Product discovery</strong><p>Interpret customer needs expressed in natural language.</p></div></li>
+                <li><span>02</span><div><strong>Product information</strong><p>Return specifications, dimensions and practical suitability information.</p></div></li>
+                <li><span>03</span><div><strong>Access points</strong><p>Expose the assistant through a prominent floating action button on web and mobile.</p></div></li>
+                <li><span>04</span><div><strong>Architecture</strong><p>Fine-tune a custom assistant to reduce third-party model dependency and control operating costs.</p></div></li>
+              </ol>
             </section>
 
-            <section id="delivery">
-              <p className="case-section-number">03 / What we delivered</p>
-              <h2>A catalogue customers could explore through their own questions.</h2>
-              <p>We built a conversational shopping assistant connected to the retailer&apos;s ERP product data.</p>
-              <p>Customers could ask about products, specifications, dimensions and other purchasing details using natural language. The assistant could then surface relevant products and provide the practical information customers needed to continue toward a purchase.</p>
-
-              <div className="delivery-grid">
-                <article><span>01</span><h3>Natural-language discovery</h3><p>Customers described the need rather than translating it into filters.</p></article>
-                <article><span>02</span><h3>ERP-connected answers</h3><p>Recommendations were grounded in the retailer&apos;s own product data.</p></article>
-                <article><span>03</span><h3>Practical confidence</h3><p>Dimensions and specifications appeared at the moment of decision.</p></article>
+            <section>
+              <p className="report-label">Observed data</p>
+              <h2>Commercial result</h2>
+              <div className="evidence-table" role="table" aria-label="Observed result summary">
+                <div role="row"><span role="rowheader">Baseline</span><p role="cell">0 sales across 3 products for 6 consecutive months</p></div>
+                <div role="row"><span role="rowheader">Exposure</span><p role="cell">Products surfaced in relevant assistant recommendations</p></div>
+                <div role="row"><span role="rowheader">Outcome</span><p role="cell"><strong>150+ orders in one month</strong></p></div>
+                <div role="row"><span role="rowheader">Evidence source</span><p role="cell">Conversation and query logs reviewed against purchase activity</p></div>
               </div>
-
-              <p>This turned the product catalogue from something customers had to search manually into something they could explore through their own questions.</p>
+              <p>The reviewed logs showed that customers encountered the products through assistant recommendations before purchasing them.</p>
             </section>
 
-            <section id="adoption">
-              <p className="case-section-number">04 / Designing for adoption</p>
-              <h2>Make the new behavior impossible to miss.</h2>
-              <p>The assistant was not hidden inside a help page or secondary menu.</p>
-              <p>We placed it in a prominent floating action button across both the website and mobile app, making it available wherever customers were in the buying journey.</p>
-              <p>This positioned conversational discovery as a central part of the shopping experience rather than an optional customer-support feature.</p>
+            <section>
+              <p className="report-label">Interpretation</p>
+              <h2>Discoverability was a material constraint.</h2>
+              <p>The observed change indicates that the products&apos; previous lack of sales did not necessarily reflect a lack of demand. Customers were more likely to purchase once the catalogue could be explored through questions about need, fit and specifications.</p>
+              <p>For considered purchases, conversational access to product knowledge can complement filters and category pages while reducing reliance on customer service.</p>
+              <div className="evidence-note">
+                <strong>Evidence note</strong>
+                <p>This was an observational business result, not a controlled experiment. The available logs support an association between assistant-led discovery and purchases, but they do not isolate every factor that may have influenced conversion.</p>
+              </div>
             </section>
 
-            <section id="constraint">
-              <p className="case-section-number">05 / The technical constraint</p>
-              <h2>Control the experience—and the cost of every conversation.</h2>
-              <p>Depending entirely on third-party AI models would introduce ongoing usage fees that increased with every customer conversation.</p>
-              <p>To reduce that dependency, we developed a custom assistant with the company&apos;s internal AI engineer and fine-tuned it for the retailer&apos;s product catalogue and shopping use cases.</p>
-              <p>This gave the business greater control over operating costs, product knowledge and the future development of the experience.</p>
-            </section>
+            <div className="report-cta">
+              <p>Need the same analysis applied to your catalogue or buying journey?</p>
+              <Link className="button button-primary" href="/#contact">Request a Commerce Review <span className="text-arrow" aria-hidden="true">↗︎</span></Link>
+            </div>
           </div>
         </div>
       </article>
-
-      <section className="case-outcome" id="outcome">
-        <div className="shell case-outcome-grid">
-          <div>
-            <p className="case-section-number">06 / The outcome</p>
-            <h2>Previously invisible inventory became commercially active.</h2>
-          </div>
-          <div className="case-outcome-copy">
-            <p>Three products had recorded no sales for six consecutive months.</p>
-            <p>After the assistant began recommending them to relevant customers, those products received more than <strong>150 orders in a single month.</strong></p>
-            <p>A review of conversation and query logs showed that customers had encountered the products through the assistant&apos;s recommendations before purchasing them.</p>
-            <p>The outcome revealed that the original problem was not necessarily a lack of demand. Customers could not buy products they did not know the retailer offered.</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="case-why" id="why">
-        <div className="shell case-why-grid">
-          <p className="case-section-number">07 / Why this matters</p>
-          <div>
-            <h2>A large catalogue creates value only when customers can navigate it.</h2>
-            <p>For retailers selling considered products, customers often need more than filters and category pages. They need answers about suitability, dimensions and practical fit at the moment they are deciding whether to buy.</p>
-            <p>By turning product knowledge into a conversation, the retailer helped customers make decisions with greater confidence while creating demand for inventory that had previously gone unnoticed.</p>
-            <Link className="button button-primary" href="/#contact">Discuss a similar problem <span className="text-arrow" aria-hidden="true">↗︎</span></Link>
-          </div>
-        </div>
-      </section>
 
       <footer>
         <div className="shell footer-grid">

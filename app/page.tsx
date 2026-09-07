@@ -140,11 +140,11 @@ export default function Home() {
         <div className="shell">
           <div className="case-section-heading">
             <div>
-              <p className="section-kicker">Case study</p>
-              <h2>Proof, not promises.</h2>
+              <p className="section-kicker">Case studies</p>
+              <h2>Selected work.</h2>
             </div>
             <div>
-              <p>A closer look at the commerce problems we&apos;ve shaped, the decisions behind the work and what changed after launch.</p>
+              <p>Project scope, implementation decisions and measured commercial results.</p>
               <Link className="button case-more-button" href="/case-studies">Show more <span className="text-arrow" aria-hidden="true">↗︎</span></Link>
             </div>
           </div>

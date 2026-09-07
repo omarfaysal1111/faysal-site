@@ -7,7 +7,7 @@ export const caseStudies = [
     location: 'Saudi Arabia',
     disciplines: ['Commerce strategy', 'AI architecture', 'ERP integration'],
     summary:
-      'A conversational shopping experience that helped customers discover the right products, answer practical questions and bring previously invisible inventory into active demand.',
+      'Conversational product discovery connected to ERP data across the retailer’s website and mobile app.',
     result: '150+',
     resultLabel: 'orders in one month from three previously unsold products',
   },
