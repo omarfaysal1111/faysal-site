@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import ContactForm from './contact-form';
-import { featuredCaseStudy as caseStudy } from './case-studies/data';
+import { featuredCaseStudy as caseStudy, featuredPortfolioItem as portfolioItem } from './case-studies/data';
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
           </a>
           <div className="nav-links">
             <a href="#home" aria-current="page">Home</a>
-            <a href="#case-studies">Case studies</a>
+            <a href="#case-studies">Case Studies &amp; Portfolio</a>
             <a href="#services">Services</a>
             <a href="#approach">Approach</a>
           </div>
@@ -140,11 +140,11 @@ export default function Home() {
         <div className="shell">
           <div className="case-section-heading">
             <div>
-              <p className="section-kicker">Case studies</p>
+              <p className="section-kicker">Case Studies &amp; Portfolio</p>
               <h2>Selected work.</h2>
             </div>
             <div>
-              <p>Project scope, implementation decisions and measured commercial results.</p>
+              <p>Measured results from client work and selected products built in-house.</p>
               <Link className="button case-more-button" href="/case-studies">Show more <span className="text-arrow" aria-hidden="true">↗︎</span></Link>
             </div>
           </div>
@@ -168,6 +168,36 @@ export default function Home() {
                 <strong>{caseStudy.result}</strong>
                 <span>{caseStudy.resultLabel}</span>
                 <b>Read the case study <span className="text-arrow" aria-hidden="true">↗︎</span></b>
+              </div>
+            </article>
+          </Link>
+
+          <Link className="featured-portfolio" href={`/portfolio/${portfolioItem.slug}`} aria-label={`View portfolio item: ${portfolioItem.title}`}>
+            <article>
+              <div className="featured-portfolio-copy">
+                <div className="portfolio-card-topline">
+                  <span>{portfolioItem.number}</span>
+                  <p>Portfolio · {portfolioItem.type}</p>
+                </div>
+                <div className="portfolio-brand-row">
+                  <Image src={portfolioItem.icon} alt="Guider app icon" width={72} height={72} />
+                  <div><span>Status</span><strong>{portfolioItem.status}</strong></div>
+                </div>
+                <h3>{portfolioItem.title}</h3>
+                <p className="portfolio-descriptor">{portfolioItem.descriptor}</p>
+                <p>{portfolioItem.summary}</p>
+                <div className="case-tags portfolio-tags" aria-label="Technology">
+                  {portfolioItem.stack.map((technology) => <span key={technology}>{technology}</span>)}
+                </div>
+                <b>View the product <span className="text-arrow" aria-hidden="true">↗︎</span></b>
+              </div>
+              <div className="featured-portfolio-visual" aria-hidden="true">
+                <div className="portfolio-preview-phone portfolio-preview-secondary">
+                  <Image src="/portfolio/guider/onboarding.png" alt="" width={638} height={1408} />
+                </div>
+                <div className="portfolio-preview-phone portfolio-preview-primary">
+                  <Image src={portfolioItem.cover} alt="" width={638} height={1408} />
+                </div>
               </div>
             </article>
           </Link>

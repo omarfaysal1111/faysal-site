@@ -20,7 +20,7 @@ export default function AiShoppingAssistantCaseStudy() {
           </Link>
           <div className="nav-links">
             <Link href="/">Home</Link>
-            <Link href="/case-studies" aria-current="page">Case studies</Link>
+            <Link href="/case-studies" aria-current="page">Case Studies &amp; Portfolio</Link>
             <Link href="/#services">Services</Link>
             <Link href="/#approach">Approach</Link>
           </div>
@@ -28,7 +28,7 @@ export default function AiShoppingAssistantCaseStudy() {
         </nav>
 
         <div className="shell case-detail-heading">
-          <Link className="back-link" href="/case-studies"><span aria-hidden="true">←</span> All case studies</Link>
+          <Link className="back-link" href="/case-studies"><span aria-hidden="true">←</span> All work</Link>
           <p className="section-kicker">Case study / {study.number}</p>
           <h1>{study.title}</h1>
           <p className="case-detail-lede">Conversational product discovery connected to ERP product data across the retailer&apos;s website and mobile app.</p>
@@ -118,7 +118,7 @@ export default function AiShoppingAssistantCaseStudy() {
             <div><strong>FAYSAL</strong><span><a href="mailto:info@faysalstudio.com">info@faysalstudio.com</a></span><span>Commerce &amp; Digital Product Studio</span></div>
           </div>
           <p>Storefronts that sell, and hold up.</p>
-          <Link href="/case-studies">All case studies <span className="text-arrow" aria-hidden="true">↑︎</span></Link>
+          <Link href="/case-studies">All work <span className="text-arrow" aria-hidden="true">↑︎</span></Link>
         </div>
       </footer>
     </main>

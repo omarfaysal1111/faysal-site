@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { caseStudies } from './data';
+import { caseStudies, portfolioItems } from './data';
 
 export const metadata: Metadata = {
-  title: 'Case Studies — FAYSAL',
-  description: 'Selected digital commerce and product work from FAYSAL Studio.',
+  title: 'Case Studies & Portfolio — FAYSAL',
+  description: 'Selected client results and products built by FAYSAL Studio.',
 };
 
 export default function CaseStudiesPage() {
@@ -20,7 +20,7 @@ export default function CaseStudiesPage() {
           </Link>
           <div className="nav-links">
             <Link href="/">Home</Link>
-            <Link href="/case-studies" aria-current="page">Case studies</Link>
+            <Link href="/case-studies" aria-current="page">Case Studies &amp; Portfolio</Link>
             <Link href="/#services">Services</Link>
             <Link href="/#approach">Approach</Link>
           </div>
@@ -30,16 +30,16 @@ export default function CaseStudiesPage() {
         <div className="shell subpage-heading">
           <Link className="back-link" href="/"><span aria-hidden="true">←</span> Back to the studio</Link>
           <p className="section-kicker">Selected work</p>
-          <h1>Case studies.</h1>
-          <p>Digital commerce and product projects, including scope, implementation and measured outcomes.</p>
+          <h1>Case studies &amp; portfolio.</h1>
+          <p>Client work with measured outcomes, alongside selected products built in-house.</p>
         </div>
       </header>
 
       <section className="case-index-section" aria-labelledby="case-index-title">
         <div className="shell">
           <div className="case-index-topline">
-            <h2 id="case-index-title">Published case studies</h2>
-            <span>{String(caseStudies.length).padStart(2, '0')} published</span>
+            <h2 id="case-index-title">Published work</h2>
+            <span>{String(caseStudies.length + portfolioItems.length).padStart(2, '0')} published</span>
           </div>
 
           <div className="case-index-grid">
@@ -63,6 +63,40 @@ export default function CaseStudiesPage() {
                   </div>
                   <div className="case-tags" aria-label="Disciplines">
                     {study.disciplines.map((discipline) => <span key={discipline}>{discipline}</span>)}
+                  </div>
+                </article>
+              </Link>
+            ))}
+
+            {portfolioItems.map((item) => (
+              <Link className="portfolio-list-card" href={`/portfolio/${item.slug}`} key={item.slug}>
+                <article>
+                  <div className="portfolio-list-copy">
+                    <div className="portfolio-card-topline">
+                      <span>{item.number}</span>
+                      <p>Portfolio · {item.type}</p>
+                    </div>
+                    <div className="portfolio-list-brand">
+                      <Image src={item.icon} alt="Guider app icon" width={64} height={64} />
+                      <span>{item.status}</span>
+                    </div>
+                    <div className="portfolio-list-title">
+                      <h3>{item.title}</h3>
+                      <p>{item.descriptor}</p>
+                    </div>
+                    <p className="portfolio-list-summary">{item.summary}</p>
+                    <div className="case-tags portfolio-tags" aria-label="Technology">
+                      {item.stack.map((technology) => <span key={technology}>{technology}</span>)}
+                    </div>
+                    <b>View portfolio item <span className="text-arrow" aria-hidden="true">↗︎</span></b>
+                  </div>
+                  <div className="portfolio-list-visual" aria-hidden="true">
+                    <div className="portfolio-index-phone portfolio-index-phone-back">
+                      <Image src="/portfolio/guider/workout.png" alt="" width={638} height={1408} />
+                    </div>
+                    <div className="portfolio-index-phone portfolio-index-phone-front">
+                      <Image src={item.cover} alt="" width={638} height={1408} />
+                    </div>
                   </div>
                 </article>
               </Link>
