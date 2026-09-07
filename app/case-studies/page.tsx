@@ -74,7 +74,7 @@ export default function CaseStudiesPage() {
             ))}
 
             {portfolioItems.map((item) => (
-              <Link className="portfolio-list-card" href={`/portfolio/${item.slug}`} key={item.slug}>
+              <Link className={`portfolio-list-card ${item.slug === 'cadence' ? 'cadence-list-card' : ''}`} href={`/portfolio/${item.slug}`} key={item.slug}>
                 <article>
                   <div className="portfolio-list-copy">
                     <div className="portfolio-card-topline">
@@ -82,7 +82,7 @@ export default function CaseStudiesPage() {
                       <p>Portfolio · {item.type}</p>
                     </div>
                     <div className="portfolio-list-brand">
-                      <Image src={item.icon} alt="Guider app icon" width={64} height={64} />
+                      <Image src={item.icon} alt={`${item.title} app icon`} width={64} height={64} />
                       <span>{item.status}</span>
                     </div>
                     <div className="portfolio-list-title">
@@ -95,14 +95,24 @@ export default function CaseStudiesPage() {
                     </div>
                     <b>View portfolio item <span className="text-arrow" aria-hidden="true">↗︎</span></b>
                   </div>
-                  <div className="portfolio-list-visual" aria-hidden="true">
-                    <div className="portfolio-index-phone portfolio-index-phone-back">
-                      <Image src="/portfolio/guider/workout.png" alt="" width={638} height={1408} />
+                  {item.slug === 'guider' ? (
+                    <div className="portfolio-list-visual" aria-hidden="true">
+                      <div className="portfolio-index-phone portfolio-index-phone-back">
+                        <Image src="/portfolio/guider/workout.png" alt="" width={638} height={1408} />
+                      </div>
+                      <div className="portfolio-index-phone portfolio-index-phone-front">
+                        <Image src={item.cover} alt="" width={638} height={1408} />
+                      </div>
                     </div>
-                    <div className="portfolio-index-phone portfolio-index-phone-front">
-                      <Image src={item.cover} alt="" width={638} height={1408} />
+                  ) : (
+                    <div className="portfolio-list-visual cadence-list-visual" aria-hidden="true">
+                      <div className="cadence-browser-card cadence-index-browser">
+                        <div className="cadence-browser-bar"><i /><i /><i /><span>home.cadence-eg.net</span></div>
+                        <Image src={item.cover} alt="" width={3024} height={1354} />
+                      </div>
+                      <Image className="cadence-floating-icon" src={item.icon} alt="" width={96} height={96} />
                     </div>
-                  </div>
+                  )}
                 </article>
               </Link>
             ))}

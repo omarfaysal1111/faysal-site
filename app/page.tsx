@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import ContactForm from './contact-form';
-import { featuredCaseStudy as caseStudy, featuredPortfolioItem as portfolioItem } from './case-studies/data';
+import { featuredCaseStudy as caseStudy, featuredPortfolioItem as portfolioItem, portfolioItems } from './case-studies/data';
+
+const cadence = portfolioItems[1];
 
 export default function Home() {
   return (
@@ -205,6 +207,35 @@ export default function Home() {
                 <div className="portfolio-preview-phone portfolio-preview-primary">
                   <Image src={portfolioItem.cover} alt="" width={638} height={1408} />
                 </div>
+              </div>
+            </article>
+          </Link>
+
+          <Link className="featured-portfolio featured-cadence" href={`/portfolio/${cadence.slug}`} aria-label={`View portfolio item: ${cadence.title}`}>
+            <article>
+              <div className="featured-portfolio-copy">
+                <div className="portfolio-card-topline">
+                  <span>{cadence.number}</span>
+                  <p>Portfolio · {cadence.type}</p>
+                </div>
+                <div className="portfolio-brand-row">
+                  <Image src={cadence.icon} alt="Cadence app icon" width={72} height={72} />
+                  <div><span>Status</span><strong>{cadence.status}</strong></div>
+                </div>
+                <h3>{cadence.title}</h3>
+                <p className="portfolio-descriptor">{cadence.descriptor}</p>
+                <p>{cadence.summary}</p>
+                <div className="case-tags portfolio-tags" aria-label="Product attributes">
+                  {cadence.stack.map((attribute) => <span key={attribute}>{attribute}</span>)}
+                </div>
+                <b>View the product <span className="text-arrow" aria-hidden="true">↗︎</span></b>
+              </div>
+              <div className="featured-portfolio-visual featured-cadence-visual" aria-hidden="true">
+                <div className="cadence-browser-card">
+                  <div className="cadence-browser-bar"><i /><i /><i /><span>home.cadence-eg.net</span></div>
+                  <Image src={cadence.cover} alt="" width={3024} height={1354} />
+                </div>
+                <Image className="cadence-floating-icon" src={cadence.icon} alt="" width={110} height={110} />
               </div>
             </article>
           </Link>

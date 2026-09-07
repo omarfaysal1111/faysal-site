@@ -63,6 +63,22 @@ export const portfolioItems = [
     appStoreUrl: 'https://apps.apple.com/eg/app/guider-fitcoach/id6771743781',
     playStoreUrl: 'https://play.google.com/store/apps/details?id=com.fitcoach.guider',
   },
+  {
+    slug: 'cadence',
+    number: 'P02',
+    title: 'Cadence',
+    descriptor: 'Bilingual booking and client management for salons',
+    type: 'Own product · SaaS',
+    role: 'Product direction, identity and delivery',
+    stack: ['Arabic + English', 'RTL-native', 'Paymob'],
+    markets: 'Egypt · Gulf second market',
+    status: 'Live product site',
+    summary:
+      'A bilingual salon booking platform designed around Arabic and English workflows, online reservations and locally integrated payments.',
+    icon: '/portfolio/cadence/icon.png',
+    cover: '/portfolio/cadence/landing-page.png',
+    productUrl: 'https://home.cadence-eg.net',
+  },
 ] as const;
 
 export const featuredPortfolioItem = portfolioItems[0];
