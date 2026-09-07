@@ -78,7 +78,7 @@ export default function ContactForm() {
       <div className="form-submit">
         <p>Your request is sent directly to info@faysalstudio.com.</p>
         <button type="submit" disabled={isSubmitting}>
-          {isSubmitting ? 'Sending…' : 'Send my request'} <span>↗</span>
+          {isSubmitting ? 'Sending…' : 'Send my request'} <span className="text-arrow" aria-hidden="true">↗︎</span>
         </button>
       </div>
       <p className="form-status" data-state={statusState} role="status" aria-live="polite">{status}</p>

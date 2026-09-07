@@ -31,15 +31,15 @@ export default function Home() {
               We uncover the friction costing ambitious brands customers, time and growth then design and build the experience forward.
             </p>
             <div className="hero-actions">
-              <a className="button button-primary" href="#contact">Request a Commerce Review <span>↗</span></a>
-              <a className="button button-quiet" href="#work">See how we think <span>↓</span></a>
+              <a className="button button-primary" href="#contact">Request a Commerce Review <span className="text-arrow" aria-hidden="true">↗︎</span></a>
+              <a className="button button-quiet" href="#work">See how we think <span className="text-arrow" aria-hidden="true">↓︎</span></a>
             </div>
           </div>
         </div>
 
         <div className="hero-foot shell">
           <p></p>
-          <a href="#services">Explore the studio <span>↓</span></a>
+          <a href="#services">Explore the studio <span className="text-arrow" aria-hidden="true">↓︎</span></a>
         </div>
       </section>
 
@@ -68,7 +68,7 @@ export default function Home() {
                 <h3>The buying journey</h3>
                 <p>Someone already wants your product and the site makes them work for it. Filters that don&apos;t match how people actually shop. A product page that leaves the one deciding question unanswered. A checkout that asks for the same address twice.</p>
               </div>
-              <span className="card-arrow">↗</span>
+              <span className="card-arrow" aria-hidden="true">↗︎</span>
             </article>
             <article className="glass-card pressure-card">
               <span className="card-number">02</span>
@@ -76,7 +76,7 @@ export default function Home() {
                 <h3>How the brand comes across</h3>
                 <p>The photography, the packaging and the shop floor all say one thing. The website says &quot;template.&quot; Customers register the difference even when they can&apos;t name it, and it costs you the premium you&apos;ve earned everywhere else.</p>
               </div>
-              <span className="card-arrow">↗</span>
+              <span className="card-arrow" aria-hidden="true">↗︎</span>
             </article>
             <article className="glass-card pressure-card">
               <span className="card-number">03</span>
@@ -84,7 +84,7 @@ export default function Home() {
                 <h3>What happens after the order</h3>
                 <p>Orders retyped from one system into another. Stock that&apos;s correct in one place and wrong in the other. Someone on your team spending two hours a day being the integration between two tools that don&apos;t talk.</p>
               </div>
-              <span className="card-arrow">↗</span>
+              <span className="card-arrow" aria-hidden="true">↗︎</span>
             </article>
             <article className="glass-card pressure-card">
               <span className="card-number">04</span>
@@ -92,7 +92,7 @@ export default function Home() {
                 <h3>What breaks under load</h3>
                 <p>The slow page on the day of the sale. The payment method that fails for one bank. The edge case nobody tested. These surface exactly when the traffic is worth the most.</p>
               </div>
-              <span className="card-arrow">↗</span>
+              <span className="card-arrow" aria-hidden="true">↗︎</span>
             </article>
           </div>
         </div>
@@ -107,7 +107,7 @@ export default function Home() {
               <p>We spend two weeks going through your storefront twice: once the way a customer does, once the way your operations team does. Then you get one document what we found, what each thing is costing you, and what to do about it in what order. Usually 10 to 14 pages. Fixed fee, and a call to walk you through it.</p>
               <p>If we go looking and there&apos;s nothing worth acting on, we&apos;ll tell you that instead of inventing a project.</p>
             </div>
-            <a className="text-link" href="#contact">Request your review <span>↗</span></a>
+            <a className="text-link" href="#contact">Request your review <span className="text-arrow" aria-hidden="true">↗︎</span></a>
           </div>
 
           <div className="report-card">
@@ -185,7 +185,7 @@ export default function Home() {
             <div><strong>FAYSAL</strong> <span><a href="mailto:info@faysalstuido.com">info@faysalstuido.com</a></span><span>Commerce &amp; Digital Product Studio</span></div>
           </div>
           <p>Storefronts that sell, and hold up.</p>
-          <a href="#home">Back to top ↑</a>
+          <a href="#home">Back to top <span className="text-arrow" aria-hidden="true">↑︎</span></a>
         </div>
       </footer>
     </main>
