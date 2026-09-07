@@ -20,8 +20,9 @@ export default function AiShoppingAssistantCaseStudy() {
           </Link>
           <div className="nav-links">
             <Link href="/">Home</Link>
-            <Link href="/case-studies">Case studies</Link>
+            <Link href="/case-studies" aria-current="page">Case studies</Link>
             <Link href="/#services">Services</Link>
+            <Link href="/#approach">Approach</Link>
           </div>
           <Link className="nav-cta" href="/#contact">Request a Review</Link>
         </nav>

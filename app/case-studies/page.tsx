@@ -20,6 +20,7 @@ export default function CaseStudiesPage() {
           </Link>
           <div className="nav-links">
             <Link href="/">Home</Link>
+            <Link href="/case-studies" aria-current="page">Case studies</Link>
             <Link href="/#services">Services</Link>
             <Link href="/#approach">Approach</Link>
           </div>
