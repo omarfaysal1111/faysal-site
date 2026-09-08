@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
 import { caseStudies, portfolioItems } from './data';
 
 export const metadata: Metadata = {
@@ -13,22 +12,22 @@ export default function CaseStudiesPage() {
     <main className="case-index-page">
       <header className="subpage-hero">
         <nav className="glass-nav subpage-nav" aria-label="Primary navigation">
-          <Link className="brand-mark" href="/" aria-label="Faysal Studio home">
+          <a className="brand-mark" href="/" aria-label="Faysal Studio home">
             <span className="viper-wrap">
               <Image src="/viper-icon.png" alt="" width={42} height={42} priority />
             </span>
-          </Link>
+          </a>
           <div className="nav-links">
-            <Link href="/">Home</Link>
-            <Link href="/case-studies" aria-current="page">Case Studies &amp; Portfolio</Link>
-            <Link href="/#services">Services</Link>
-            <Link href="/#approach">Approach</Link>
+            <a href="/">Home</a>
+            <a href="/case-studies" aria-current="page">Case Studies &amp; Portfolio</a>
+            <a href="/#services">Services</a>
+            <a href="/#approach">Approach</a>
           </div>
-          <Link className="nav-cta" href="/#contact">Request a Review</Link>
+          <a className="nav-cta" href="/#contact">Request a Review</a>
         </nav>
 
         <div className="shell subpage-heading">
-          <Link className="back-link" href="/"><span aria-hidden="true">←</span> Back to the studio</Link>
+          <a className="back-link" href="/"><span aria-hidden="true">←</span> Back to the studio</a>
           <p className="section-kicker">Selected work</p>
           <h1>Case studies &amp; portfolio.</h1>
           <p>Client work with measured outcomes, alongside selected products built in-house.</p>
@@ -124,7 +123,7 @@ export default function CaseStudiesPage() {
         <div className="shell">
           <p className="section-kicker">Commerce review</p>
           <h2>Review your storefront, product or workflow.</h2>
-          <Link className="button button-primary" href="/#contact">Request a Commerce Review <span className="text-arrow" aria-hidden="true">↗︎</span></Link>
+          <a className="button button-primary" href="/#contact">Request a Commerce Review <span className="text-arrow" aria-hidden="true">↗︎</span></a>
         </div>
       </section>
 
@@ -135,7 +134,7 @@ export default function CaseStudiesPage() {
             <div><strong>FAYSAL</strong><span><a href="mailto:info@faysalstudio.com">info@faysalstudio.com</a></span><span>Commerce &amp; Digital Product Studio</span></div>
           </div>
           <p>Storefronts that sell, and hold up.</p>
-          <Link href="/">Home <span className="text-arrow" aria-hidden="true">↗︎</span></Link>
+          <a href="/">Home <span className="text-arrow" aria-hidden="true">↗︎</span></a>
         </div>
       </footer>
     </main>

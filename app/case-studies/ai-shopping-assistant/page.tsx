@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
 import { featuredCaseStudy as study } from '../data';
 
 export const metadata: Metadata = {
@@ -24,22 +23,22 @@ export default function AiShoppingAssistantCaseStudy() {
     <main className="case-detail-page">
       <header className="case-detail-hero">
         <nav className="glass-nav subpage-nav" aria-label="Primary navigation">
-          <Link className="brand-mark" href="/" aria-label="Faysal Studio home">
+          <a className="brand-mark" href="/" aria-label="Faysal Studio home">
             <span className="viper-wrap">
               <Image src="/viper-icon.png" alt="" width={42} height={42} priority />
             </span>
-          </Link>
+          </a>
           <div className="nav-links">
-            <Link href="/">Home</Link>
-            <Link href="/case-studies" aria-current="page">Case Studies &amp; Portfolio</Link>
-            <Link href="/#services">Services</Link>
-            <Link href="/#approach">Approach</Link>
+            <a href="/">Home</a>
+            <a href="/case-studies" aria-current="page">Case Studies &amp; Portfolio</a>
+            <a href="/#services">Services</a>
+            <a href="/#approach">Approach</a>
           </div>
-          <Link className="nav-cta" href="/#contact">Request a Review</Link>
+          <a className="nav-cta" href="/#contact">Request a Review</a>
         </nav>
 
         <div className="shell case-detail-heading">
-          <Link className="back-link" href="/case-studies"><span aria-hidden="true">←</span> All work</Link>
+          <a className="back-link" href="/case-studies"><span aria-hidden="true">←</span> All work</a>
           <p className="section-kicker">Case study / {study.number}</p>
           <h1>{study.title}</h1>
           <p className="case-detail-lede">Conversational product discovery connected to ERP product data across the retailer&apos;s website and mobile app.</p>
@@ -116,7 +115,7 @@ export default function AiShoppingAssistantCaseStudy() {
 
             <div className="report-cta">
               <p>Need the same analysis applied to your catalogue or buying journey?</p>
-              <Link className="button button-primary" href="/#contact">Request a Commerce Review <span className="text-arrow" aria-hidden="true">↗︎</span></Link>
+              <a className="button button-primary" href="/#contact">Request a Commerce Review <span className="text-arrow" aria-hidden="true">↗︎</span></a>
             </div>
           </div>
         </div>
@@ -129,7 +128,7 @@ export default function AiShoppingAssistantCaseStudy() {
             <div><strong>FAYSAL</strong><span><a href="mailto:info@faysalstudio.com">info@faysalstudio.com</a></span><span>Commerce &amp; Digital Product Studio</span></div>
           </div>
           <p>Storefronts that sell, and hold up.</p>
-          <Link href="/case-studies">All work <span className="text-arrow" aria-hidden="true">↑︎</span></Link>
+          <a href="/case-studies">All work <span className="text-arrow" aria-hidden="true">↑︎</span></a>
         </div>
       </footer>
     </main>
