@@ -151,7 +151,7 @@ export default function Home() {
             </div>
           </div>
 
-          <Link className="featured-case-study" href={`/case-studies/${caseStudy.slug}`} aria-label={`Read case study: ${caseStudy.title}`}>
+          <a className="featured-case-study" href={`/case-studies/${caseStudy.slug}`} aria-label={`Read case study: ${caseStudy.title}`}>
             <article>
               <div className="featured-case-copy">
                 <div className="case-card-topline">
@@ -179,9 +179,9 @@ export default function Home() {
                 <b>Read the case study <span className="text-arrow" aria-hidden="true">↗︎</span></b>
               </div>
             </article>
-          </Link>
+          </a>
 
-          <Link className="featured-portfolio" href={`/portfolio/${portfolioItem.slug}`} aria-label={`View portfolio item: ${portfolioItem.title}`}>
+          <a className="featured-portfolio" href={`/portfolio/${portfolioItem.slug}`} aria-label={`View portfolio item: ${portfolioItem.title}`}>
             <article>
               <div className="featured-portfolio-copy">
                 <div className="portfolio-card-topline">
@@ -209,9 +209,9 @@ export default function Home() {
                 </div>
               </div>
             </article>
-          </Link>
+          </a>
 
-          <Link className="featured-portfolio featured-cadence" href={`/portfolio/${cadence.slug}`} aria-label={`View portfolio item: ${cadence.title}`}>
+          <a className="featured-portfolio featured-cadence" href={`/portfolio/${cadence.slug}`} aria-label={`View portfolio item: ${cadence.title}`}>
             <article>
               <div className="featured-portfolio-copy">
                 <div className="portfolio-card-topline">
@@ -238,7 +238,7 @@ export default function Home() {
                 <Image className="cadence-floating-icon" src={cadence.icon} alt="" width={110} height={110} />
               </div>
             </article>
-          </Link>
+          </a>
         </div>
       </section>
 

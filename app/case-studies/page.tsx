@@ -44,7 +44,7 @@ export default function CaseStudiesPage() {
 
           <div className="case-index-grid">
             {caseStudies.map((study) => (
-              <Link className="case-list-card" href={`/case-studies/${study.slug}`} key={study.slug}>
+              <a className="case-list-card" href={`/case-studies/${study.slug}`} key={study.slug}>
                 <article>
                   <div className="case-list-meta">
                     <span>{study.number}</span>
@@ -70,11 +70,11 @@ export default function CaseStudiesPage() {
                     {study.disciplines.map((discipline) => <span key={discipline}>{discipline}</span>)}
                   </div>
                 </article>
-              </Link>
+              </a>
             ))}
 
             {portfolioItems.map((item) => (
-              <Link className={`portfolio-list-card ${item.slug === 'cadence' ? 'cadence-list-card' : ''}`} href={`/portfolio/${item.slug}`} key={item.slug}>
+              <a className={`portfolio-list-card ${item.slug === 'cadence' ? 'cadence-list-card' : ''}`} href={`/portfolio/${item.slug}`} key={item.slug}>
                 <article>
                   <div className="portfolio-list-copy">
                     <div className="portfolio-card-topline">
@@ -114,7 +114,7 @@ export default function CaseStudiesPage() {
                     </div>
                   )}
                 </article>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
