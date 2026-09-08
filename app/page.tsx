@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import ContactForm from './contact-form';
 import { featuredCaseStudy as caseStudy, featuredPortfolioItem as portfolioItem, portfolioItems } from './case-studies/data';
 
@@ -147,7 +146,7 @@ export default function Home() {
             </div>
             <div>
               <p>Measured results from client work and selected products built in-house.</p>
-              <Link className="button case-more-button" href="/case-studies">Show more <span className="text-arrow" aria-hidden="true">↗︎</span></Link>
+              <a className="button case-more-button" href="/case-studies">Show more <span className="text-arrow" aria-hidden="true">↗︎</span></a>
             </div>
           </div>
 
