@@ -1,0 +1,384 @@
+FAY / SAL STUDIO
+
+
+
+
+  DIGITAL EXPERIENCE PROPOSAL
+
+
+
+
+Clocky
+A red-carpet journey
+for watches worth wanting.
+The pain points standing between Clocky's product quality and a
+premium digital buying experience - followed by a focused plan to
+close that gap.
+
+
+
+
+   PREPARED FOR                     PREPARED BY
+
+   Clocky EGY                       FAYSAL Studio
+   14 September 2026
+
+
+
+
+                                                                    FAYSAL STUDIO / CLOCKY PROPOSAL / 01
+01 / SOCIAL REACH
+
+
+
+
+Clocky's product quality is ahead of its reach.
+The account has built a useful content base, but the audience size and visible Reel views show that the content is not compounding yet.
+
+
+
+
+                                                                                                                   PUBLIC INSTAGRAM SNAPSHOT
+
+
+
+
+                                                                                                                   718                                200
+                                                                                                                   followers                          posts
+
+
+
+
+                                                                                                                   01      Content looks catalogue-led
+                                                                                                                           The product appears often, but the brand story and human
+                                                                                                                           proof stay limited.
+
+
+                                                                                                                   02 Reach is not compounding
+                                                                                                                           Visible views remain close to or below the existing follower
+                                                                                                                           base.
+
+                                                                                                                   03 The next step is weak
+                                                                                                                           Interest is pushed to DM or the homepage instead of the
+                                                                                                                           exact watch.
+
+
+
+
+     THE SOCIAL PAIN POINT
+
+
+     Clocky is producing content, but not yet building a repeatable discovery-to-sale system.
+
+Profile figures and screenshot captured from @clocky.eg on 14 September 2026.
+
+
+
+                                                                                                                                         FAYSAL STUDIO / CLOCKY PROPOSAL / 02
+02 / SOCIAL TO COMMERCE
+
+
+
+
+Reach is not fixed by posting more.
+It grows when every post has a job.
+The goal is not only views. It is qualified attention that reaches the exact watch and continues toward a purchase.
+
+
+                                                                                                                        THE NEW CONTENT ENGINE
+
+
+
+                                                                                                                            01    Clocky Proof                                   02   On the Wrist
+                                                                                                                                  Quality, inspection, warranty.                      People, sizing and styling.
+
+
+
+
+                                                                                                                            03    Watch School                                   04   Choose Your Watch
+                                                                                                                                  Simple education and care.                          Compare style, use and budget.
+
+
+
+
+                                                                                                                            05    Drops and Offers
+                                                                                                                                  One product, one story and one clear action.
+
+
+
+
+     VISIBLE RECENT REELS / 192 / 503 / 520 VIEWS
+     Product close-ups are strong raw material; the distribution system is the gap.
+
+
+
+
+     THE SHOPPABLE PATH
+
+
+     REEL HOOK         >       PRODUCT PROOF            >       SHOP THIS WATCH            >       EXACT PRODUCT PAGE   >    WHATSAPP / CHECKOUT
+
+
+
+
+Reel view counts are a point-in-time public observation and will change as content continues to run.
+
+
+                                                                                                                                                                            FAYSAL STUDIO / CLOCKY PROPOSAL / 03
+03 / THE SITE PAIN POINTS
+
+
+
+
+The product is not the problem.
+The experience around it is.
+Clocky has strong products and visual material. The current journey breaks that premium feeling before interest becomes a purchase.
+
+
+
+
+     01         Arabic feels translated, not localized                                                                02 Video interest has nowhere to go
+     The Arabic experience mixes languages and uses inconsistent product wording. A                                   A customer can like a watch inside a video, but cannot move directly to that exact
+     premium buyer should never have to decode the store.                                                             product. Desire is created, then the path stops.
+
+
+
+
+     BUSINESS COST: LOWER TRUST                                                                     See evidence 01   BUSINESS COST: LOST PURCHASE INTENT                                         See evidence 02
+
+
+
+
+     03 The structure feels fragmented                                                                                04 Premium products feel ordinary online
+     Sections, long product rows and content blocks do not form one clear selling story.                              The spacing, hierarchy and product presentation do not give each watch enough focus,
+     Customers browse around instead of moving forward.                                                               guidance or perceived value.
+
+
+
+
+     BUSINESS COST: MORE FRICTION                                                                   See evidence 03   BUSINESS COST: LOWER PERCEIVED QUALITY                                      See evidence 03
+
+
+
+
+    05 / PERFORMANCE INSTABILITY
+
+    More than 70 console errors were observed. This creates avoidable speed, reliability and tracking risk.
+
+
+Observations are based on the public Clocky storefront. No analytics or store administration access was used.
+
+
+
+                                                                                                                                                                       FAYSAL STUDIO / CLOCKY PROPOSAL / 04
+04 / EVIDENCE FROM THE CURRENT SITE
+
+
+
+
+The gaps are visible in the journey
+Real screenshots captured from clockyeg.com/ar on 14 September 2026.
+
+
+
+
+  EVIDENCE 01 / MIXED ARABIC AND ENGLISH                                                     EVIDENCE 02 / VIDEOS ARE NOT SHOPPABLE
+  English headings and product naming remain inside the Arabic store.                        The video row shows watches without a direct path to each product.
+
+
+
+
+                                                                        EVIDENCE 03 / THE SELLING STORY IS DISTRIBUTED
+
+
+                                                                        Attractive pieces, but no guided showroom.
+                                                                        The hero, long product grids, collection blocks, brand rows and a separate video area compete for attention.
+                                                                        The customer sees content, but is not led through a deliberate premium journey.
+
+
+
+                                                                        RESULT: INTEREST IS CREATED IN ONE PLACE AND LOST BEFORE THE NEXT STEP
+
+
+
+
+                                                                                                                                                       FAYSAL STUDIO / CLOCKY PROPOSAL / 05
+05 / PERFORMANCE EVIDENCE
+
+
+
+
+The storefront is carrying technical weight.
+A premium journey should feel instant and controlled. The current test results show clear room to improve speed and runtime stability.
+
+
+
+
+      MOBILE / PERFORMANCE 60                                                                                                  DESKTOP / PERFORMANCE 57
+
+
+
+
+                                                                                                                                        EVIDENCE 04 / RUNTIME ERRORS
+
+
+
+                                                                                                                                        76 console errors
+                                                                                                                                        and 7 reported issues
+                                                                                                                                        Runtime errors can delay media, break interactive features, interfere with
+                                                                                                                                        measurement and make every future change harder to test safely.
+
+
+
+                                                                                                                                           TRACKING FOUND
+
+                                                                                                                                           Meta Pixel is loaded; Shopify reports Facebook CAPI enabled.
+
+
+
+
+PageSpeed Insights lab results and browser-console capture supplied on 14 September 2026. Scores are estimates and may vary.
+
+
+
+                                                                                                                                                                             FAYSAL STUDIO / CLOCKY PROPOSAL / 06
+06 / THE RED-CARPET EXPERIENCE
+
+
+
+
+A watch buyer should feel guided,
+not left to search.
+Watches are a considered, niche purchase. The site should feel like a private showroom: calm, clear and
+reassuring at every step.
+
+
+
+
+ 01    Arrival
+       A distinct Arabic and English welcome, written naturally for each customer.
+
+
+
+
+ 02    Curated showroom
+       Browse by style, occasion, budget and product type - with less noise and clearer direction.
+
+
+
+
+ 03    Shoppable watch story
+       Every video names the watch and opens its exact product page through a clear 'Shop this watch' action.
+
+
+
+
+ 04    Confidence lounge
+       Product type, specifications, close-ups, customer proof, delivery, returns and warranty sit beside the
+       decision.
+                                                                                                                THE EXPERIENCE PRINCIPLE
+
+
+                                                                                                                One watch. One story.
+ 05    Concierge checkout                                                                                       One effortless next step.
+       A simple checkout and visible WhatsApp support make the final step feel personal and effortless.
+
+
+
+
+                                                                                                                        FAYSAL STUDIO / CLOCKY PROPOSAL / 07
+07 / FOCUSED IMPLEMENTATION
+
+
+
+
+Fix the buying journey first.
+No unnecessary rebuild.
+A four-week sprint focused on the points that most affect clarity, trust and purchase intent.
+
+
+
+       WEEK 1                                                      WEEK 2                                              WEEK 3                                     WEEK 4
+
+
+
+    Map and prioritize                                           Design the system                                   Connect and build                          Test and launch
+    Audit social and site together, then rank                    Create the content series, bilingual                Link Reels and site videos to exact        Test mobile, Arabic, performance and
+    each issue by sales impact, effort and                       storefront structure and premium                    watches, then move trust beside each       tracking events, then launch and
+    urgency.                                                     product-page direction.                             buying decision.                           measure the first cycle.
+
+
+
+
+    OUTPUT                                                       OUTPUT                                              OUTPUT                                     OUTPUT
+    One connected journey map                                    A social and UX system                              A shoppable content journey                A measured first release
+
+
+
+
+      THE FIRST SPRINT
+
+
+
+      Turn every moment of interest into an easy next step.
+      FAYSAL Studio would redesign the path from arrival to product discovery to purchase - while preserving what Clocky already                            NEXT: PRIORITY + SCOPE SESSION
+      does well.
+
+
+
+
+Evidence captured from the public storefront on 14 September 2026. Final scope follows analytics and admin review.
+
+
+
+                                                                                                                                                               FAYSAL STUDIO / CLOCKY PROPOSAL / 08
+08 / SALES IMPACT MODEL
+
+
+
+
+Solving the pain points improves the whole funnel.
+The result is not one isolated design win. It is more qualified attention, less lost intent and a higher chance that each visit becomes an order.
+
+
+
+
+    01                                                  02                                                 03                               04                                   05
+    Stronger social reach                               Shoppable videos                                   Premium localization             Faster stable site                   Clear proof and CTA
+
+    MORE QUALIFIED VISITS                               MORE PRODUCT VIEWS                                 HIGHER BUYER TRUST               FEWER DROP-OFFS                      MORE COMPLETED ORDERS
+
+
+
+
+     ILLUSTRATIVE SALES MODEL / PER 10,000 QUALIFIED SITE VISITS
+
+
+
+     SCENARIO                                                      CONVERSION                                          ORDERS                                    REVENUE @ EGP 4K AOV           UPLIFT
+
+
+
+
+     Assumed baseline                                              0.8%                                                80                                        EGP 320,000                    -
+
+
+
+     Conservative improvement                                      1.0%                                                100                                       EGP 400,000                    +25%
+
+
+
+     Strong improvement                                            1.2%                                                120                                       EGP 480,000                    +50%
+
+
+
+     WHAT THIS MEANS                     +40 orders per 10,000 visits when conversion moves from 0.8% to 1.2%.
+
+
+                                                                ANY GROWTH IN QUALIFIED SOCIAL TRAFFIC ADDS ON TOP OF THE CONVERSION IMPROVEMENT
+
+
+Illustrative scenario only, not a guarantee. Replace assumed conversion and AOV with Clocky's actual analytics before financial planning.
+
+                                                                                                                                                                        FAYSAL STUDIO / CLOCKY PROPOSAL / 09
+

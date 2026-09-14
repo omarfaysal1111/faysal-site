@@ -1,0 +1,69 @@
+{
+  "assets": [
+    {
+      "contentType": "image/avif",
+      "id": "9321ba8ebf7f488d",
+      "kind": "image",
+      "name": "logo_76128b55-5fcf-4aaa-a1e4-6a1827de49f7.webp",
+      "path": "/var/folders/6l/mppbdsmx0dq5b0hj59j3s7yh0000gn/T/browser-use/assets/cebb8285-e3a7-4420-a283-dc6d4ba17f76/9321ba8ebf7f488d.webp",
+      "url": "https://clockyeg.com/cdn/shop/files/logo_76128b55-5fcf-4aaa-a1e4-6a1827de49f7.webp?v=1770559127&width=220"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "c92d326e57c1cc9d",
+      "kind": "image",
+      "name": "Artboard_12.png",
+      "path": "/var/folders/6l/mppbdsmx0dq5b0hj59j3s7yh0000gn/T/browser-use/assets/cebb8285-e3a7-4420-a283-dc6d4ba17f76/c92d326e57c1cc9d.png",
+      "url": "https://clockyeg.com/cdn/shop/files/Artboard_12.png?v=1770560569&width=750"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "19aa19520bc26039",
+      "kind": "image",
+      "name": "Artboard_9.png",
+      "path": "/var/folders/6l/mppbdsmx0dq5b0hj59j3s7yh0000gn/T/browser-use/assets/cebb8285-e3a7-4420-a283-dc6d4ba17f76/19aa19520bc26039.png",
+      "url": "https://clockyeg.com/cdn/shop/files/Artboard_9.png?v=1770560552&width=750"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "cabe2596b3b741e2",
+      "kind": "image",
+      "name": "Artboard_11.png",
+      "path": "/var/folders/6l/mppbdsmx0dq5b0hj59j3s7yh0000gn/T/browser-use/assets/cebb8285-e3a7-4420-a283-dc6d4ba17f76/cabe2596b3b741e2.png",
+      "url": "https://clockyeg.com/cdn/shop/files/Artboard_11.png?v=1770560569&width=750"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "3a04dd34bcfb75f9",
+      "kind": "image",
+      "name": "Artboard_13.png",
+      "path": "/var/folders/6l/mppbdsmx0dq5b0hj59j3s7yh0000gn/T/browser-use/assets/cebb8285-e3a7-4420-a283-dc6d4ba17f76/3a04dd34bcfb75f9.png",
+      "url": "https://clockyeg.com/cdn/shop/files/Artboard_13.png?v=1770560569&width=1100"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "fd24ca804a6b89d6",
+      "kind": "image",
+      "name": "Artboard_10.png",
+      "path": "/var/folders/6l/mppbdsmx0dq5b0hj59j3s7yh0000gn/T/browser-use/assets/cebb8285-e3a7-4420-a283-dc6d4ba17f76/fd24ca804a6b89d6.png",
+      "url": "https://clockyeg.com/cdn/shop/files/Artboard_10.png?v=1770560569&width=1100"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "e73ef145b6481118",
+      "kind": "image",
+      "name": "Artboard_1.png",
+      "path": "/var/folders/6l/mppbdsmx0dq5b0hj59j3s7yh0000gn/T/browser-use/assets/cebb8285-e3a7-4420-a283-dc6d4ba17f76/e73ef145b6481118.png",
+      "url": "https://clockyeg.com/cdn/shop/files/Artboard_1.png?v=1770560553&width=1100"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "4a34e33c8dac9837",
+      "kind": "image",
+      "name": "67d321997f794cd5a636d986bcd845d9.thumbnail.0000000000_1500x.jpg",
+      "path": "/var/folders/6l/mppbdsmx0dq5b0hj59j3s7yh0000gn/T/browser-use/assets/cebb8285-e3a7-4420-a283-dc6d4ba17f76/4a34e33c8dac9837.jpg",
+      "url": "https://clockyeg.com/cdn/shop/files/preview_images/67d321997f794cd5a636d986bcd845d9.thumbnail.0000000000_1500x.jpg?v=1772420962"
+    }
+  ],
+  "failures": []
+}
