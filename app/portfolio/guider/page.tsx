@@ -145,7 +145,7 @@ export default function GuiderPortfolioPage() {
           <dl className="guider-facts">
             <div><dt>Type</dt><dd>{guider.type}, B2B white-label</dd></div>
             <div><dt>Role</dt><dd>{guider.role}</dd></div>
-            <div><dt>Stack</dt><dd>Flutter · Firebase · BLoC</dd></div>
+            <div><dt>Stack</dt><dd>Flutter · Springboot · AWS</dd></div>
             <div><dt>Markets</dt><dd>Egypt, with a Saudi entry path</dd></div>
           </dl>
         </div>
