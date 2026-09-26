@@ -3,6 +3,7 @@ import ContactForm from './contact-form';
 import { caseStudies, featuredCaseStudy as caseStudy, featuredPortfolioItem as portfolioItem } from './case-studies/data';
 
 const rfidCaseStudy = caseStudies[1];
+const offlineFirstCaseStudy = caseStudies[2];
 
 export default function Home() {
   return (
@@ -234,6 +235,36 @@ export default function Home() {
                 <div className="case-outcome-baseline">
                   <span>Previous baseline</span>
                   <p>{rfidCaseStudy.resultBaseline}</p>
+                </div>
+                <b>Read the case study <span className="text-arrow" aria-hidden="true">↗︎</span></b>
+              </div>
+            </article>
+          </a>
+
+          <a className="featured-case-study" href={`/case-studies/${offlineFirstCaseStudy.slug}`} aria-label={`Read case study: ${offlineFirstCaseStudy.title}`}>
+            <article>
+              <div className="featured-case-copy">
+                <div className="case-card-topline">
+                  <span>{offlineFirstCaseStudy.number}</span>
+                  <p>{offlineFirstCaseStudy.client} · {offlineFirstCaseStudy.location}</p>
+                </div>
+                <h3>{offlineFirstCaseStudy.title}</h3>
+                <p>{offlineFirstCaseStudy.summary}</p>
+                <div className="case-tags" aria-label="Disciplines">
+                  {offlineFirstCaseStudy.disciplines.map((discipline) => <span key={discipline}>{discipline}</span>)}
+                </div>
+              </div>
+              <div className="featured-case-result">
+                <div className="case-orbit" aria-hidden="true"><i /><i /><i /></div>
+                <p className="case-outcome-label">Measured outcome</p>
+                <div className="case-outcome-value">
+                  <strong>{offlineFirstCaseStudy.result}</strong>
+                  <span>{offlineFirstCaseStudy.resultUnit}</span>
+                </div>
+                <p className="case-outcome-period">{offlineFirstCaseStudy.resultPeriod}</p>
+                <div className="case-outcome-baseline">
+                  <span>Previous baseline</span>
+                  <p>{offlineFirstCaseStudy.resultBaseline}</p>
                 </div>
                 <b>Read the case study <span className="text-arrow" aria-hidden="true">↗︎</span></b>
               </div>
