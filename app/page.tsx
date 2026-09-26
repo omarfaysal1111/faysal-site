@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import ContactForm from './contact-form';
-import { featuredCaseStudy as caseStudy, featuredPortfolioItem as portfolioItem, portfolioItems } from './case-studies/data';
+import { caseStudies, featuredCaseStudy as caseStudy, featuredPortfolioItem as portfolioItem } from './case-studies/data';
 
-const cadence = portfolioItems[1];
+const rfidCaseStudy = caseStudies[1];
 
 export default function Home() {
   return (
@@ -210,31 +210,32 @@ export default function Home() {
             </article>
           </a>
 
-          <a className="featured-portfolio featured-cadence" href={`/portfolio/${cadence.slug}`} aria-label={`View portfolio item: ${cadence.title}`}>
+          <a className="featured-case-study" href={`/case-studies/${rfidCaseStudy.slug}`} aria-label={`Read case study: ${rfidCaseStudy.title}`}>
             <article>
-              <div className="featured-portfolio-copy">
-                <div className="portfolio-card-topline">
-                  <span>{cadence.number}</span>
-                  <p>Portfolio · {cadence.type}</p>
+              <div className="featured-case-copy">
+                <div className="case-card-topline">
+                  <span>{rfidCaseStudy.number}</span>
+                  <p>{rfidCaseStudy.client} · {rfidCaseStudy.location}</p>
                 </div>
-                <div className="portfolio-brand-row">
-                  <Image src={cadence.icon} alt="Cadence app icon" width={72} height={72} />
-                  <div><span>Status</span><strong>{cadence.status}</strong></div>
+                <h3>{rfidCaseStudy.title}</h3>
+                <p>{rfidCaseStudy.summary}</p>
+                <div className="case-tags" aria-label="Disciplines">
+                  {rfidCaseStudy.disciplines.map((discipline) => <span key={discipline}>{discipline}</span>)}
                 </div>
-                <h3>{cadence.title}</h3>
-                <p className="portfolio-descriptor">{cadence.descriptor}</p>
-                <p>{cadence.summary}</p>
-                <div className="case-tags portfolio-tags" aria-label="Product attributes">
-                  {cadence.stack.map((attribute) => <span key={attribute}>{attribute}</span>)}
-                </div>
-                <b>View the product <span className="text-arrow" aria-hidden="true">↗︎</span></b>
               </div>
-              <div className="featured-portfolio-visual featured-cadence-visual" aria-hidden="true">
-                <div className="cadence-browser-card">
-                  <div className="cadence-browser-bar"><i /><i /><i /><span>home.cadence-eg.net</span></div>
-                  <Image src={cadence.cover} alt="" width={3024} height={1354} />
+              <div className="featured-case-result">
+                <div className="case-orbit" aria-hidden="true"><i /><i /><i /></div>
+                <p className="case-outcome-label">Measured outcome</p>
+                <div className="case-outcome-value">
+                  <strong>{rfidCaseStudy.result}</strong>
+                  <span>{rfidCaseStudy.resultUnit}</span>
                 </div>
-                <Image className="cadence-floating-icon" src={cadence.icon} alt="" width={110} height={110} />
+                <p className="case-outcome-period">{rfidCaseStudy.resultPeriod}</p>
+                <div className="case-outcome-baseline">
+                  <span>Previous baseline</span>
+                  <p>{rfidCaseStudy.resultBaseline}</p>
+                </div>
+                <b>Read the case study <span className="text-arrow" aria-hidden="true">↗︎</span></b>
               </div>
             </article>
           </a>
