@@ -164,7 +164,8 @@ h1 em { color:#d89ba2; font-family:Georgia, 'Times New Roman', serif; font-weigh
 .case-section-heading > div:last-child { justify-self:end; max-width:500px; }
 .case-section-heading > div:last-child > p { margin:0; color:#655c57; font-size:17px; line-height:1.65; }
 .case-more-button { width:max-content; margin-top:28px; background:var(--burgundy); color:var(--ivory); }
-.featured-case-study { display:block; border-radius:34px; color:var(--ivory); background:linear-gradient(145deg,#151212 0%,#301519 55%,#632a32 100%); box-shadow:0 34px 80px rgba(37,18,20,.2); overflow:hidden; }
+.featured-case-study { display:block; margin-top:24px; border-radius:34px; color:var(--ivory); background:linear-gradient(145deg,#151212 0%,#301519 55%,#632a32 100%); box-shadow:0 34px 80px rgba(37,18,20,.2); overflow:hidden; }
+.case-section-heading + .featured-case-study { margin-top:0; }
 .featured-case-study > article { min-height:620px; display:grid; grid-template-columns:1.14fr .86fr; }
 .featured-case-copy { padding:42px 46px 46px; display:flex; flex-direction:column; }
 .case-card-topline,.case-list-meta { display:flex; justify-content:space-between; gap:25px; align-items:center; color:rgba(255,255,255,.47); font-size:10px; letter-spacing:.1em; text-transform:uppercase; }
