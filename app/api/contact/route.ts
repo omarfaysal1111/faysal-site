@@ -1,8 +1,19 @@
 const MAX_FIELD_LENGTH = 2_000;
 
+const serviceLabels: Record<string, string> = {
+  'store-improvement-sprint': 'Store Improvement Sprint — $200',
+  'comprehensive-commerce-review': 'Comprehensive Commerce Review — from $500',
+  'ecommerce-build': 'E-commerce Build — from $2,500',
+  'digital-product': 'Digital Product — from $5,000',
+  'brand-project': 'Brand Project — from $1,000',
+  'ongoing-growth': 'Ongoing Growth Services — from $750/month',
+  'general-enquiry': 'General enquiry',
+};
+
 type ContactRequest = {
   name?: unknown;
   company?: unknown;
+  service?: unknown;
   email?: unknown;
   website?: unknown;
   challenge?: unknown;
@@ -42,15 +53,16 @@ export async function POST(request: Request) {
 
   const name = readField(payload.name, 120);
   const company = readField(payload.company, 160);
+  const service = readField(payload.service, 80);
   const email = readField(payload.email, 254);
   const website = readField(payload.website, 500);
   const challenge = readField(payload.challenge);
 
-  if (!name || !company || !email || !website || !challenge) {
+  if (!name || !company || !service || !email || !website || !challenge) {
     return Response.json({ error: 'Please complete every field.' }, { status: 400 });
   }
 
-  if (!isValidEmail(email) || !isValidWebsite(website)) {
+  if (!serviceLabels[service] || !isValidEmail(email) || !isValidWebsite(website)) {
     return Response.json({ error: 'Please check the email and website.' }, { status: 400 });
   }
 
@@ -75,12 +87,13 @@ export async function POST(request: Request) {
       from: fromEmail,
       to: [toEmail],
       reply_to: email,
-      subject: `Commerce Review Request — ${subjectCompany}`,
+      subject: `${serviceLabels[service]} enquiry — ${subjectCompany}`,
       text: [
-        'New Commerce Review Request',
+        'New Faysal Studio Enquiry',
         '',
         `Name: ${name}`,
         `Company: ${company}`,
+        `Service: ${serviceLabels[service]}`,
         `Work email: ${email}`,
         `Website or app: ${website}`,
         '',

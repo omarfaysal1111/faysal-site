@@ -57,6 +57,7 @@ export default function CadencePortfolioPage() {
             <a href="/">Home</a>
             <a href="/case-studies" aria-current="page">Case Studies &amp; Portfolio</a>
             <a href="/#services">Services</a>
+            <a href="/#pricing">Pricing</a>
             <a href="/#approach">Approach</a>
           </div>
           <a className="nav-cta" href="/#contact">Request a Review</a>

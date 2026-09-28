@@ -1,11 +1,29 @@
 'use client';
 
-import { FormEvent, useState } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
+
+const serviceOptions = [
+  { value: 'store-improvement-sprint', label: 'Store Improvement Sprint — $200' },
+  { value: 'comprehensive-commerce-review', label: 'Comprehensive Commerce Review — from $500' },
+  { value: 'ecommerce-build', label: 'E-commerce Build — from $2,500' },
+  { value: 'digital-product', label: 'Digital Product — from $5,000' },
+  { value: 'brand-project', label: 'Brand Project — from $1,000' },
+  { value: 'ongoing-growth', label: 'Ongoing Growth Services — from $750/month' },
+  { value: 'general-enquiry', label: 'General enquiry' },
+] as const;
 
 export default function ContactForm() {
   const [status, setStatus] = useState('');
   const [statusState, setStatusState] = useState<'idle' | 'success' | 'error'>('idle');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [service, setService] = useState('');
+
+  useEffect(() => {
+    const requestedService = new URLSearchParams(window.location.search).get('service');
+    if (requestedService && serviceOptions.some((option) => option.value === requestedService)) {
+      setService(requestedService);
+    }
+  }, []);
 
   async function sendRequest(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -23,6 +41,7 @@ export default function ContactForm() {
         body: JSON.stringify({
           name: form.get('name'),
           company: form.get('company'),
+          service: form.get('service'),
           email: form.get('email'),
           website: form.get('website'),
           challenge: form.get('challenge'),
@@ -35,6 +54,7 @@ export default function ContactForm() {
       }
 
       formElement.reset();
+      setService('');
       setStatusState('success');
       setStatus('Sent. We’ll reply within two working days.');
     } catch {
@@ -50,6 +70,13 @@ export default function ContactForm() {
       <label className="form-hp" aria-hidden="true">
         <span>Company fax</span>
         <input name="companyFax" tabIndex={-1} autoComplete="off" />
+      </label>
+      <label>
+        <span>Service</span>
+        <select name="service" value={service} onChange={(event) => setService(event.target.value)} required>
+          <option value="" disabled>Select an offer</option>
+          {serviceOptions.map((option) => <option value={option.value} key={option.value}>{option.label}</option>)}
+        </select>
       </label>
       <div className="field-row">
         <label>
@@ -76,7 +103,7 @@ export default function ContactForm() {
         <textarea name="challenge" rows={4} placeholder="Sales dropped after the redesign. Checkout abandonment. Orders taking too long to process. Anything." required />
       </label>
       <div className="form-submit">
-        <p>Your request is sent directly to info@faysalstudio.com.</p>
+        <p>Scope and suitability are confirmed before payment. Your request is sent directly to info@faysalstudio.com.</p>
         <button type="submit" disabled={isSubmitting}>
           {isSubmitting ? 'Sending…' : 'Send my request'} <span className="text-arrow" aria-hidden="true">↗︎</span>
         </button>

@@ -5,6 +5,64 @@ import { caseStudies, featuredCaseStudy as caseStudy, featuredPortfolioItem as p
 const rfidCaseStudy = caseStudies[1];
 const offlineFirstCaseStudy = caseStudies[2];
 
+const pricingOffers = [
+  {
+    number: '02',
+    slug: 'comprehensive-commerce-review',
+    title: 'Comprehensive Commerce Review',
+    price: 'From $500',
+    unit: 'Per review',
+    audience: 'Store owners who need a full diagnosis before committing to a rebuild or improvement programme.',
+    scope: 'One store, customer journey review, findings report and walkthrough.',
+    separate: 'Implementation, additional markets and deeper research.',
+    cta: 'Request a Commerce Review',
+  },
+  {
+    number: '03',
+    slug: 'ecommerce-build',
+    title: 'E-commerce Builds',
+    price: 'From $2,500',
+    unit: 'Per project',
+    audience: 'Brands ready to launch or rebuild a standard platform-based online store.',
+    scope: 'Commerce strategy, UX, design, front-end setup and launch on a standard platform.',
+    separate: 'Custom integrations, substantial migrations, ongoing optimisation and post-launch support.',
+    cta: 'Discuss an E-commerce Build',
+  },
+  {
+    number: '04',
+    slug: 'digital-product',
+    title: 'Digital Products',
+    price: 'From $5,000',
+    unit: 'Per project',
+    audience: 'Teams turning one operational or customer workflow into a focused digital product.',
+    scope: 'A focused first version covering one core workflow.',
+    separate: 'Additional workflows, enterprise integrations, extended support and later phases.',
+    cta: 'Discuss a Digital Product',
+  },
+  {
+    number: '05',
+    slug: 'brand-project',
+    title: 'Brand Projects',
+    price: 'From $1,000',
+    unit: 'Per project',
+    audience: 'Businesses that need a clear visual foundation before growing their presence.',
+    scope: 'Logo, colours, typography and basic usage guidelines.',
+    separate: 'Naming, research, campaign systems, content production and additional applications.',
+    cta: 'Discuss a Brand Project',
+  },
+  {
+    number: '06',
+    slug: 'ongoing-growth',
+    title: 'Ongoing Growth Services',
+    price: 'From $750/month',
+    unit: 'Monthly engagement',
+    audience: 'Brands that need ongoing execution around one primary growth channel.',
+    scope: 'One primary channel, agreed content volume, planning and reporting.',
+    separate: 'Advertising spend, additional channels, third-party subscriptions and production.',
+    cta: 'Discuss Ongoing Growth',
+  },
+] as const;
+
 export default function Home() {
   return (
     <main>
@@ -23,6 +81,7 @@ export default function Home() {
             <a href="#home" aria-current="page">Home</a>
             <a href="/case-studies">Case Studies &amp; Portfolio</a>
             <a href="#services">Services</a>
+            <a href="#pricing">Pricing</a>
             <a href="#approach">Approach</a>
           </div>
           <a className="nav-cta" href="#contact">Request a Review</a>
@@ -36,9 +95,10 @@ export default function Home() {
               We uncover the friction costing ambitious brands customers, time and growth then design and build the experience forward.
             </p>
             <div className="hero-actions">
-              <a className="button button-primary" href="#contact">Request a Commerce Review <span className="text-arrow" aria-hidden="true">↗︎</span></a>
+              <a className="button button-primary" href="/?service=comprehensive-commerce-review#contact">Request a Commerce Review <span className="text-arrow" aria-hidden="true">↗︎</span></a>
               <a className="button button-quiet" href="#work">See how we think <span className="text-arrow" aria-hidden="true">↓︎</span></a>
             </div>
+            <a className="hero-sprint-link" href="#pricing">Start with the $200 Store Improvement Sprint <span className="text-arrow" aria-hidden="true">↓︎</span></a>
           </div>
         </div>
 
@@ -106,13 +166,14 @@ export default function Home() {
       <section className="review-section" id="work">
         <div className="shell review-grid">
           <div className="review-copy">
-            <p className="section-kicker dark-kicker">Where most clients start</p>
+            <p className="section-kicker dark-kicker">For a deeper diagnosis</p>
             <h2>Before you pay for a rebuild, find out what actually needs rebuilding.</h2>
             <div className="review-body">
-              <p>We spend two weeks going through your storefront twice: once the way a customer does, once the way your operations team does. Then you get one document what we found, what each thing is costing you, and what to do about it in what order. Usually 10 to 14 pages. Fixed fee, and a call to walk you through it.</p>
+              <p>We spend two weeks going through your storefront twice: once the way a customer does, once the way your operations team does. Then you get a 10–14-page document: what we found, what each issue is costing you, and what to do about it in what order, followed by a walkthrough call.</p>
               <p>If we go looking and there&apos;s nothing worth acting on, we&apos;ll tell you that instead of inventing a project.</p>
+              <p>This is separate from the $200 Store Improvement Sprint. Implementation is priced separately.</p>
             </div>
-            <a className="text-link" href="#contact">Request your review <span className="text-arrow" aria-hidden="true">↗︎</span></a>
+            <a className="text-link" href="/?service=comprehensive-commerce-review#contact">Request your review <span className="text-arrow" aria-hidden="true">↗︎</span></a>
           </div>
 
           <div className="report-card">
@@ -288,6 +349,63 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="pricing-section" id="pricing">
+        <div className="shell">
+          <div className="pricing-heading">
+            <div>
+              <p className="section-kicker dark-kicker">Services &amp; pricing</p>
+              <h2>Start with the scope that fits.</h2>
+            </div>
+            <p>Every engagement begins with a clear scope. Suitability and final pricing are confirmed before payment or work begins.</p>
+          </div>
+
+          <article className="sprint-card">
+            <div className="sprint-card-intro">
+              <div className="sprint-card-topline">
+                <span>A focused place to start</span>
+                <b>01</b>
+              </div>
+              <h3>Store Improvement Sprint</h3>
+              <p>A focused starting point for store owners who want to understand what needs attention and make one practical improvement.</p>
+              <div className="sprint-price"><strong>$200</strong><span>Fixed scope</span></div>
+              <a className="button sprint-button" href="/?service=store-improvement-sprint#contact">Request the $200 Sprint <span className="text-arrow" aria-hidden="true">↗︎</span></a>
+            </div>
+            <div className="sprint-card-scope">
+              <p className="pricing-label">Included</p>
+              <ul>
+                <li>A 20-minute discovery call.</li>
+                <li>Review of one typical mobile shopping journey.</li>
+                <li>Three prioritised findings with evidence and recommended actions.</li>
+                <li>One agreed small improvement, confirmed as feasible before payment.</li>
+                <li>A short handover explaining the change and next steps.</li>
+              </ul>
+              <div className="sprint-exclusions">
+                <span>Outside this sprint</span>
+                <p>Full market research, brand books, redesigns, complex integrations and unlimited fixes.</p>
+              </div>
+            </div>
+          </article>
+
+          <div className="pricing-grid">
+            {pricingOffers.map((offer) => (
+              <article className="pricing-card" key={offer.slug}>
+                <div className="pricing-card-topline"><span>{offer.number}</span><b>{offer.unit}</b></div>
+                <h3>{offer.title}</h3>
+                <div className="pricing-card-price">{offer.price}</div>
+                <dl>
+                  <div><dt>Who it is for</dt><dd>{offer.audience}</dd></div>
+                  <div><dt>Starting scope</dt><dd>{offer.scope}</dd></div>
+                  <div><dt>Priced separately</dt><dd>{offer.separate}</dd></div>
+                </dl>
+                <a href={`/?service=${offer.slug}#contact`}>{offer.cta} <span className="text-arrow" aria-hidden="true">↗︎</span></a>
+              </article>
+            ))}
+          </div>
+
+          <p className="pricing-note">Starting prices cover a defined scope. Final pricing is confirmed before work begins. Advertising spend, third-party subscriptions and additional production are quoted separately where applicable.</p>
+        </div>
+      </section>
+
       <section className="approach-section" id="approach">
         <div className="shell">
           <div className="approach-intro">
@@ -301,7 +419,7 @@ export default function Home() {
             <article><span>01</span><h3>Two weeks looking</h3><p>Your customer journey, your analytics, and a real conversation with whoever handles orders after they land. The operations side is where the surprises usually are.</p></article>
             <article><span>02</span><h3>A ranked list</h3><p>Not everything is worth fixing. We separate what&apos;s costing you money now from what&apos;s merely annoying, and we&apos;re specific about which is which.</p></article>
             <article><span>03</span><h3>A small team building</h3><p>Usually two or three people, working in short cycles you can watch rather than a black box with a launch date at the end.</p></article>
-            <article><span>04</span><h3>Six weeks after launch</h3><p>We stay on long enough to see what real customers do with it and correct what we got wrong. Nobody gets it entirely right the first time.</p></article>
+            <article><span>04</span><h3>Six weeks after a build launches</h3><p>For build engagements that explicitly include post-launch support, we stay for six weeks to see what real customers do and correct what needs attention. That support is scoped and priced separately.</p></article>
           </div>
         </div>
       </section>
@@ -312,7 +430,7 @@ export default function Home() {
           <div className="contact-copy">
             <p className="section-kicker">Tell us what&apos;s not working</p>
             <h2>What&apos;s your storefront costing you right now?</h2>
-            <p>Send us the site, app or workflow you want looked at, and tell us what&apos;s bothering you even if you can&apos;t put your finger on it precisely. We&apos;ll come back with what we&apos;d examine first and an honest read on whether we&apos;re the right people for it.</p>
+            <p>Choose the offer you&apos;re considering, then send us the site, app or workflow you want looked at. We&apos;ll confirm scope, suitability and the next step before any payment.</p>
           </div>
           <ContactForm />
         </div>
