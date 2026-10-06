@@ -3,12 +3,12 @@
 import { FormEvent, useEffect, useState } from 'react';
 
 const serviceOptions = [
-  { value: 'store-improvement-sprint', label: 'Store Improvement Sprint — $200' },
-  { value: 'comprehensive-commerce-review', label: 'Comprehensive Commerce Review — from $500' },
-  { value: 'ecommerce-build', label: 'E-commerce Build — from $2,500' },
-  { value: 'digital-product', label: 'Digital Product — from $5,000' },
-  { value: 'brand-project', label: 'Brand Project — from $1,000' },
-  { value: 'ongoing-growth', label: 'Ongoing Growth Services — from $750/month' },
+  { value: 'store-improvement-sprint', label: 'Store Improvement Sprint — EGP 5,000' },
+  { value: 'comprehensive-commerce-review', label: 'Comprehensive Commerce Review — from EGP 15,000' },
+  { value: 'ecommerce-build', label: 'E-commerce Build — from EGP 45,000' },
+  { value: 'digital-product', label: 'Digital Product — from EGP 120,000' },
+  { value: 'brand-project', label: 'Brand Project — from EGP 18,000' },
+  { value: 'ongoing-growth', label: 'Ongoing Growth Services — from EGP 12,000/month' },
   { value: 'general-enquiry', label: 'General enquiry' },
 ] as const;
 

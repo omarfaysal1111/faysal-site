@@ -1,12 +1,12 @@
 const MAX_FIELD_LENGTH = 2_000;
 
 const serviceLabels: Record<string, string> = {
-  'store-improvement-sprint': 'Store Improvement Sprint — $200',
-  'comprehensive-commerce-review': 'Comprehensive Commerce Review — from $500',
-  'ecommerce-build': 'E-commerce Build — from $2,500',
-  'digital-product': 'Digital Product — from $5,000',
-  'brand-project': 'Brand Project — from $1,000',
-  'ongoing-growth': 'Ongoing Growth Services — from $750/month',
+  'store-improvement-sprint': 'Store Improvement Sprint — EGP 5,000',
+  'comprehensive-commerce-review': 'Comprehensive Commerce Review — from EGP 15,000',
+  'ecommerce-build': 'E-commerce Build — from EGP 45,000',
+  'digital-product': 'Digital Product — from EGP 120,000',
+  'brand-project': 'Brand Project — from EGP 18,000',
+  'ongoing-growth': 'Ongoing Growth Services — from EGP 12,000/month',
   'general-enquiry': 'General enquiry',
 };
 

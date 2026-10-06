@@ -10,7 +10,7 @@ const pricingOffers = [
     number: '02',
     slug: 'comprehensive-commerce-review',
     title: 'Comprehensive Commerce Review',
-    price: 'From $500',
+    price: 'From EGP 15,000',
     unit: 'Per review',
     audience: 'Store owners who need a full diagnosis before committing to a rebuild or improvement programme.',
     scope: 'One store, customer journey review, findings report and walkthrough.',
@@ -21,7 +21,7 @@ const pricingOffers = [
     number: '03',
     slug: 'ecommerce-build',
     title: 'E-commerce Builds',
-    price: 'From $2,500',
+    price: 'From EGP 45,000',
     unit: 'Per project',
     audience: 'Brands ready to launch or rebuild a standard platform-based online store.',
     scope: 'Commerce strategy, UX, design, front-end setup and launch on a standard platform.',
@@ -32,7 +32,7 @@ const pricingOffers = [
     number: '04',
     slug: 'digital-product',
     title: 'Digital Products',
-    price: 'From $5,000',
+    price: 'From EGP 120,000',
     unit: 'Per project',
     audience: 'Teams turning one operational or customer workflow into a focused digital product.',
     scope: 'A focused first version covering one core workflow.',
@@ -43,7 +43,7 @@ const pricingOffers = [
     number: '05',
     slug: 'brand-project',
     title: 'Brand Projects',
-    price: 'From $1,000',
+    price: 'From EGP 18,000',
     unit: 'Per project',
     audience: 'Businesses that need a clear visual foundation before growing their presence.',
     scope: 'Logo, colours, typography and basic usage guidelines.',
@@ -54,7 +54,7 @@ const pricingOffers = [
     number: '06',
     slug: 'ongoing-growth',
     title: 'Ongoing Growth Services',
-    price: 'From $750/month',
+    price: 'From EGP 12,000/month',
     unit: 'Monthly engagement',
     audience: 'Brands that need ongoing execution around one primary growth channel.',
     scope: 'One primary channel, agreed content volume, planning and reporting.',
@@ -98,7 +98,7 @@ export default function Home() {
               <a className="button button-primary" href="/?service=comprehensive-commerce-review#contact">Request a Commerce Review <span className="text-arrow" aria-hidden="true">↗︎</span></a>
               <a className="button button-quiet" href="#work">See how we think <span className="text-arrow" aria-hidden="true">↓︎</span></a>
             </div>
-            <a className="hero-sprint-link" href="#pricing">Start with the $200 Store Improvement Sprint <span className="text-arrow" aria-hidden="true">↓︎</span></a>
+            <a className="hero-sprint-link" href="#pricing">Start with the EGP 5,000 Store Improvement Sprint <span className="text-arrow" aria-hidden="true">↓︎</span></a>
           </div>
         </div>
 
@@ -171,7 +171,7 @@ export default function Home() {
             <div className="review-body">
               <p>We spend two weeks going through your storefront twice: once the way a customer does, once the way your operations team does. Then you get a 10–14-page document: what we found, what each issue is costing you, and what to do about it in what order, followed by a walkthrough call.</p>
               <p>If we go looking and there&apos;s nothing worth acting on, we&apos;ll tell you that instead of inventing a project.</p>
-              <p>This is separate from the $200 Store Improvement Sprint. Implementation is priced separately.</p>
+              <p>This is separate from the EGP 5,000 Store Improvement Sprint. Implementation is priced separately.</p>
             </div>
             <a className="text-link" href="/?service=comprehensive-commerce-review#contact">Request your review <span className="text-arrow" aria-hidden="true">↗︎</span></a>
           </div>
@@ -356,7 +356,7 @@ export default function Home() {
               <p className="section-kicker dark-kicker">Services &amp; pricing</p>
               <h2>Start with the scope that fits.</h2>
             </div>
-            <p>Every engagement begins with a clear scope. Suitability and final pricing are confirmed before payment or work begins.</p>
+            <p>Prices are in Egyptian pounds. Every engagement begins with a clear scope, with suitability and final pricing confirmed before payment or work begins.</p>
           </div>
 
           <article className="sprint-card">
@@ -367,8 +367,8 @@ export default function Home() {
               </div>
               <h3>Store Improvement Sprint</h3>
               <p>A focused starting point for store owners who want to understand what needs attention and make one practical improvement.</p>
-              <div className="sprint-price"><strong>$200</strong><span>Fixed scope</span></div>
-              <a className="button sprint-button" href="/?service=store-improvement-sprint#contact">Request the $200 Sprint <span className="text-arrow" aria-hidden="true">↗︎</span></a>
+              <div className="sprint-price"><strong>5,000</strong><span>EGP · Fixed scope</span></div>
+              <a className="button sprint-button" href="/?service=store-improvement-sprint#contact">Request the EGP 5,000 Sprint <span className="text-arrow" aria-hidden="true">↗︎</span></a>
             </div>
             <div className="sprint-card-scope">
               <p className="pricing-label">Included</p>
@@ -402,7 +402,7 @@ export default function Home() {
             ))}
           </div>
 
-          <p className="pricing-note">Starting prices cover a defined scope. Final pricing is confirmed before work begins. Advertising spend, third-party subscriptions and additional production are quoted separately where applicable.</p>
+          <p className="pricing-note">All prices are in EGP and cover a defined starting scope. Final pricing is confirmed before work begins. Advertising spend, third-party subscriptions and additional production are quoted separately where applicable.</p>
         </div>
       </section>
 
