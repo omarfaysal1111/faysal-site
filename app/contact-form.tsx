@@ -6,9 +6,9 @@ const serviceOptions = [
   { value: 'store-improvement-sprint', label: 'Store Improvement Sprint — EGP 5,000' },
   { value: 'comprehensive-commerce-review', label: 'Comprehensive Commerce Review — from EGP 15,000' },
   { value: 'ecommerce-build', label: 'E-commerce Build — from EGP 45,000' },
-  { value: 'digital-product', label: 'Digital Product — from EGP 120,000' },
+  { value: 'digital-product', label: 'Digital Product' },
   { value: 'brand-project', label: 'Brand Project — from EGP 18,000' },
-  { value: 'ongoing-growth', label: 'Ongoing Growth Services — from EGP 12,000/month' },
+  { value: 'ongoing-growth', label: 'Ongoing Growth Services' },
   { value: 'general-enquiry', label: 'General enquiry' },
 ] as const;
 

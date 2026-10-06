@@ -32,8 +32,8 @@ const pricingOffers = [
     number: '04',
     slug: 'digital-product',
     title: 'Digital Products',
-    price: 'From EGP 120,000',
-    unit: 'Per project',
+    price: 'Custom proposal',
+    unit: 'Scoped engagement',
     audience: 'Teams turning one operational or customer workflow into a focused digital product.',
     scope: 'A focused first version covering one core workflow.',
     separate: 'Additional workflows, enterprise integrations, extended support and later phases.',
@@ -54,7 +54,7 @@ const pricingOffers = [
     number: '06',
     slug: 'ongoing-growth',
     title: 'Ongoing Growth Services',
-    price: 'From EGP 12,000/month',
+    price: 'Custom proposal',
     unit: 'Monthly engagement',
     audience: 'Brands that need ongoing execution around one primary growth channel.',
     scope: 'One primary channel, agreed content volume, planning and reporting.',
@@ -402,7 +402,7 @@ export default function Home() {
             ))}
           </div>
 
-          <p className="pricing-note">All prices are in EGP and cover a defined starting scope. Final pricing is confirmed before work begins. Advertising spend, third-party subscriptions and additional production are quoted separately where applicable.</p>
+          <p className="pricing-note">Published prices are in EGP and cover a defined starting scope. Digital product and ongoing growth engagements are scoped individually. Final pricing is confirmed before work begins. Advertising spend, third-party subscriptions and additional production are quoted separately where applicable.</p>
         </div>
       </section>
 

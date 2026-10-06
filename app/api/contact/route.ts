@@ -4,9 +4,9 @@ const serviceLabels: Record<string, string> = {
   'store-improvement-sprint': 'Store Improvement Sprint — EGP 5,000',
   'comprehensive-commerce-review': 'Comprehensive Commerce Review — from EGP 15,000',
   'ecommerce-build': 'E-commerce Build — from EGP 45,000',
-  'digital-product': 'Digital Product — from EGP 120,000',
+  'digital-product': 'Digital Product',
   'brand-project': 'Brand Project — from EGP 18,000',
-  'ongoing-growth': 'Ongoing Growth Services — from EGP 12,000/month',
+  'ongoing-growth': 'Ongoing Growth Services',
   'general-enquiry': 'General enquiry',
 };
 
